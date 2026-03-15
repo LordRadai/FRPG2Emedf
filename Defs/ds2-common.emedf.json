@@ -102,7 +102,7 @@
           ]
         },
         {
-          "name": "Choose Chameleon",
+          "name": "Chameleon",
           "index": 2,
           "args": [
             {
@@ -693,7 +693,7 @@
           "args": []
         },
         {
-          "name": "Chameleon",
+          "name": "Choose Chameleon",
           "index": 12,
           "args": [
             {
@@ -1381,12 +1381,26 @@
           "index": 21,
           "args": [
             {
-              "name": "SpEffect ID 1",
+              "name": "Duration",
+              "type": 6,
+              "enum_name": null,
+              "default": 0.0,
+              "min": 0.0,
+              "max": 3600.0,
+              "increment": 0.0,
+              "format_string": "%0.3f",
+              "unk1": 0,
+              "unk2": 0,
+              "unk3": 0,
+              "unk4": 0
+            },
+            {
+              "name": "Index",
               "type": 2,
               "enum_name": null,
               "default": 0,
               "min": 0,
-              "max": 1000000000,
+              "max": 5,
               "increment": 1,
               "format_string": "%d",
               "unk1": 0,
@@ -1395,49 +1409,7 @@
               "unk4": 0
             },
             {
-              "name": "SpEffect ID 2",
-              "type": 2,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 1000000000,
-              "increment": 1,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 0,
-              "unk4": 0
-            },
-            {
-              "name": "SpEffect ID 3",
-              "type": 2,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 1000000000,
-              "increment": 1,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 0,
-              "unk4": 0
-            },
-            {
-              "name": "SpEffect ID 4",
-              "type": 2,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 1000000000,
-              "increment": 1,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 0,
-              "unk4": 0
-            },
-            {
-              "name": "SpEffect ID 5",
+              "name": "Unlock SFX ID",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -1499,7 +1471,7 @@
       "index": 100040,
       "instrs": [
         {
-          "name": "Scale SpEffect By Attribute",
+          "name": "Effect Correction By Attribute",
           "index": 0,
           "args": [
             {
@@ -2054,7 +2026,7 @@
           ]
         },
         {
-          "name": "Issue Host Damage During Cooperative Multiplayer",
+          "name": "Host Damage During Cooperative Multiplayer",
           "index": 3,
           "args": [
             {
@@ -3947,7 +3919,7 @@
           ]
         },
         {
-          "name": "Single Damage Generation",
+          "name": "Generate Damage Once",
           "index": 1,
           "args": [
             {
@@ -4177,7 +4149,7 @@
               "enum_name": null,
               "default": 0.0,
               "min": 0.0,
-              "max": 9999.0,
+              "max": 3600.0,
               "increment": 1.0,
               "format_string": "%0.3f",
               "unk1": 0,

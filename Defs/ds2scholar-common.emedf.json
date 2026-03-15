@@ -4754,9 +4754,9 @@
     {
       "name": "ForcedSummonSearchType",
       "values": {
-        "0": "Guardian's Seal",
-        "1": "Crest Of The Rat",
-        "2": "Bell Keeper's Seal"
+        "0": "Blue Sentinel",
+        "1": "Rat King",
+        "2": "Bell Keeper"
       }
     },
     {
@@ -4771,12 +4771,13 @@
         "6": "Water Wet",
         "7": "Blood Soaked",
         "8": "Toxic",
-        "9": "Oily",
+        "9": "Oil Wet",
         "10": "Petrification",
         "11": "Poison Wet",
-        "12": "Unknown (12)",
-        "13": "Unknown (13)",
-        "14": "Unknown (14)"
+        "12": "Ash Coating",
+        "13": "Bronze Coating",
+        "14": "Snow Coating",
+        "15": "Water Coating"
       }
     },
     {
@@ -4855,9 +4856,9 @@
         "6": "Dark",
         "7": "Poison",
         "8": "Bleeding",
-        "9": "(Weapon Destruction) (Not Supported)",
-        "10": "(Curse) (Not Supported)",
-        "11": "(Mundane) (Not Supported)"
+        "9": "Weapon Destruction (Not Supported)",
+        "10": "Curse (Not Supported)",
+        "11": "Mundane (Not Supported)"
       }
     },
     {

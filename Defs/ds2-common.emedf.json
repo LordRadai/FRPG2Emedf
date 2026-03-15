@@ -949,13 +949,13 @@
           ]
         },
         {
-          "name": "Special Attack Rate",
+          "name": "Dead Count Attack Rate",
           "index": 15,
           "args": [
             {
               "name": "Type",
               "type": 0,
-              "enum_name": "SpecialAtkRateType",
+              "enum_name": "DeadCountAtkRateType",
               "default": 0,
               "min": 0,
               "max": 0,
@@ -1043,9 +1043,9 @@
           "index": 16,
           "args": [
             {
-              "name": "Unknown0",
+              "name": "Damage Attribute",
               "type": 0,
-              "enum_name": null,
+              "enum_name": "DamageAttribute",
               "default": 0,
               "min": 0,
               "max": 255,
@@ -4706,7 +4706,7 @@
       }
     },
     {
-      "name": "SpecialAtkRateType",
+      "name": "DeadCountAtkRateType",
       "values": {
         "1": "Hollow Level",
         "2": "Sin"
@@ -4731,8 +4731,8 @@
     {
       "name": "EstusModificationType",
       "values": {
-        "1": "Boost By 50",
-        "2": "Reduce To 0"
+        "1": "Estus Effect Correction",
+        "2": "Estus Prohibited"
       }
     },
     {
@@ -4904,6 +4904,17 @@
         "1": "Lightning",
         "2": "Fire",
         "3": "Dark"
+      }
+    },
+    {
+      "name": "DamageAttribute",
+      "values": {
+        "0": "None",
+        "1": "Physical",
+        "2": "Magic",
+        "3": "Lightning",
+        "4": "Fire",
+        "5": "Dark"
       }
     }
   ],

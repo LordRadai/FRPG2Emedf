@@ -4583,9 +4583,11 @@
         "22": "SFXID When HP Recovers When Defeated",
         "23": "SFX Dummy Poly ID When Recovering HP When Defeated",
         "25": "Npc Equip Weight",
-        "30": "Unknown (30)",
-        "31": "Unknown (31)",
-        "32": "Unknown (32)",
+        "28": "Npc Equipment Durability Value Change [Left Hand Current Weapon]",
+        "29": "Npc Equipment Durability Value Change [Right Hand Current Weapon]",
+        "30": "Npc Equipment Durability Value Change [All Equipped Weapons]",
+        "31": "Npc Equipment Durability Value Change [All Equipment Armor]",
+        "32": "Npc Equipment Durability Value Change [All Equipment Rings]",
         "33": "Armor Poise"
       }
     },

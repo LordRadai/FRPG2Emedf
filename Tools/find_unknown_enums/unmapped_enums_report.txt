@@ -12,11 +12,3 @@ FOLDER: F:\GitHub\DS2SEmevdef\Dump
 ## ChrStatusValue
   > Unknown22:
     - Event 41030000 (in SpEffectRing.emevd.js)
-
-## ChrStatusValue32
-  > Unknown30:
-    - Event 96740000 (in SpEffectEnemy.emevd.js)
-  > Unknown31:
-    - Event 96740000 (in SpEffectEnemy.emevd.js)
-  > Unknown32:
-    - Event 96740000 (in SpEffectEnemy.emevd.js)

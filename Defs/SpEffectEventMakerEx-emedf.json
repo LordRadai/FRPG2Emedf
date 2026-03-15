@@ -3659,24 +3659,9 @@
           ]
         },
         {
-          "name": "Draw Disable Full Body SFX",
+          "name": "Disable Full Body SFX",
           "index": 5,
-          "args": [
-            {
-              "name": "Unknown",
-              "type": 5,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 1000000000,
-              "increment": 1,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 0,
-              "unk4": 0
-            }
-          ]
+          "args": []
         },
         {
           "name": "Add Spell Deflect Chance",
@@ -3713,7 +3698,7 @@
           ]
         },
         {
-          "name": "Apply SpEffect If Event Flag Set",
+          "name": "Event Flag Effect",
           "index": 7,
           "args": [
             {
@@ -3743,29 +3728,15 @@
               "unk2": 0,
               "unk3": 0,
               "unk4": 0
-            },
-            {
-              "name": "Unknown",
-              "type": 0,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 255,
-              "increment": 1,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 0,
-              "unk4": 0
             }
           ]
         },
         {
-          "name": "Apply SpEffect On Kill Enemy Gender",
+          "name": "Gender Effect",
           "index": 8,
           "args": [
             {
-              "name": "SpEffect ID When Same Gender",
+              "name": "Same Gender SpEffect ID",
               "type": 5,
               "enum_name": null,
               "default": 0,
@@ -3779,7 +3750,7 @@
               "unk4": 0
             },
             {
-              "name": "SpEffect ID When Opposite Gender",
+              "name": "Opposite Gender SpEffect ID",
               "type": 5,
               "enum_name": null,
               "default": 0,

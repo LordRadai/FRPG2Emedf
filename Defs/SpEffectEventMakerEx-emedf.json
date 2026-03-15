@@ -2106,7 +2106,7 @@
               "format_string": "%d",
               "unk1": 0,
               "unk2": 0,
-              "unk3": 0,
+              "unk3": 2,
               "unk4": 0
             },
             {
@@ -2120,7 +2120,7 @@
               "format_string": "%d",
               "unk1": 0,
               "unk2": 0,
-              "unk3": 0,
+              "unk3": 3,
               "unk4": 0
             },
             {
@@ -2134,7 +2134,7 @@
               "format_string": "%d",
               "unk1": 0,
               "unk2": 0,
-              "unk3": 0,
+              "unk3": 4,
               "unk4": 0,
               "vararg": true
             }

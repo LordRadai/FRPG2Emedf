@@ -102,7 +102,7 @@
           ]
         },
         {
-          "name": "Apply Chameleon Disguise",
+          "name": "Choose Chameleon",
           "index": 2,
           "args": [
             {
@@ -693,11 +693,11 @@
           "args": []
         },
         {
-          "name": "Apply Random SpEffect",
+          "name": "Chameleon",
           "index": 12,
           "args": [
             {
-              "name": "SpEffect1",
+              "name": "SpEffect ID 1",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -711,7 +711,7 @@
               "unk4": 0
             },
             {
-              "name": "SpEffect2",
+              "name": "SpEffect ID 2",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -725,7 +725,7 @@
               "unk4": 0
             },
             {
-              "name": "SpEffect3",
+              "name": "SpEffect ID 3",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -739,7 +739,7 @@
               "unk4": 0
             },
             {
-              "name": "SpEffect4",
+              "name": "SpEffect ID 4",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -753,7 +753,7 @@
               "unk4": 0
             },
             {
-              "name": "SpEffect5",
+              "name": "SpEffect ID 5",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -1357,7 +1357,7 @@
           ]
         },
         {
-          "name": "NPC Mimicry Lottery",
+          "name": "Choose Npc Chameleon",
           "index": 20,
           "args": [
             {
@@ -1377,12 +1377,12 @@
           ]
         },
         {
-          "name": "NPC Mimicry",
+          "name": "Npc Chameleon",
           "index": 21,
           "args": [
             {
               "name": "SpEffect ID 1",
-              "type": 5,
+              "type": 2,
               "enum_name": null,
               "default": 0,
               "min": 0,
@@ -1396,7 +1396,7 @@
             },
             {
               "name": "SpEffect ID 2",
-              "type": 5,
+              "type": 2,
               "enum_name": null,
               "default": 0,
               "min": 0,
@@ -1410,7 +1410,35 @@
             },
             {
               "name": "SpEffect ID 3",
-              "type": 5,
+              "type": 2,
+              "enum_name": null,
+              "default": 0,
+              "min": 0,
+              "max": 1000000000,
+              "increment": 1,
+              "format_string": "%d",
+              "unk1": 0,
+              "unk2": 0,
+              "unk3": 0,
+              "unk4": 0
+            },
+            {
+              "name": "SpEffect ID 4",
+              "type": 2,
+              "enum_name": null,
+              "default": 0,
+              "min": 0,
+              "max": 1000000000,
+              "increment": 1,
+              "format_string": "%d",
+              "unk1": 0,
+              "unk2": 0,
+              "unk3": 0,
+              "unk4": 0
+            },
+            {
+              "name": "SpEffect ID 5",
+              "type": 2,
               "enum_name": null,
               "default": 0,
               "min": 0,
@@ -4547,41 +4575,41 @@
         "3": "Fall Damage Protection Modifier",
         "4": "Attack Correction Near-death HP Ratio (0-100%)",
         "5": "Damage Taken Near-death HP Ratio (0-100%)",
-        "6": "Vigor",
-        "7": "Endurance",
-        "8": "Vitality",
-        "10": "Strength",
-        "11": "Dexterity",
-        "12": "Intelligence",
-        "13": "Faith",
-        "14": "Adaptability",
+        "6": "Level Status [Vigor]",
+        "7": "Level Status [Endurance]",
+        "8": "Level Status [Vitality]",
+        "10": "Level Status [Strength]",
+        "11": "Level Status [Dexterity]",
+        "12": "Level Status [Intelligence]",
+        "13": "Level Status [Faith]",
+        "14": "Level Status [Adaptability]",
         "17": "Dead Count Addition",
-        "18": "HP On Kill",
+        "18": "HP Recovery On Kill",
         "19": "Material Replacement",
         "20": "Attunement Slots",
-        "21": "Block Stamina Damage Bonus",
+        "21": "Block Stamina Damage",
         "22": "Unknown (22)"
       }
     },
     {
       "name": "ChrStatusValue32",
       "values": {
-        "8": "HP Gradual Decrease Value When Using Spell [Magic]",
-        "9": "HP Gradual Decrease Value When Using Spell [Miracle]",
-        "10": "HP Gradual Decrease Value When Using Spell [Sorcery]",
-        "11": "HP Gradual Decrease Value When Using Spell [Dark Magic]",
-        "12": "HP Gradual Decrease Value When Using Spell [Dark Miracle]",
+        "8": "HP Decrease Value Spell [Magic]",
+        "9": "HP Decrease Value Spell [Miracle]",
+        "10": "HP Decrease Value Spell [Sorcery]",
+        "11": "HP Decrease Value Spell [Dark Magic]",
+        "12": "HP Decrease Value Spell [Dark Miracle]",
         "13": "Equipment Durability Value Change [Left Hand Current Weapon]",
         "14": "Equipment Durability Value Change [Right Hand Current Weapon]",
         "15": "Equipment Durability Value Change [All Equipped Weapons]",
         "16": "Equipment Durability Value Change [All Equipment Armor]",
         "17": "Equipment Durability Value Change [All Equipment Rings]",
         "18": "Phantom Type",
-        "19": "Player Light Switching",
-        "20": "Field Of View Switching",
+        "19": "Player Light",
+        "20": "Field Of View",
         "21": "Wet Type",
-        "22": "SFX ID When HP Recovers When Defeated",
-        "23": "SFX Dummy Poly ID When Recovering HP When Defeated",
+        "22": "HP Recovery On Kill SFX ID",
+        "23": "HP Recovery On Kill SFX Dummy Poly ID",
         "25": "Npc Equip Weight",
         "28": "Npc Equipment Durability Value Change [Left Hand Current Weapon]",
         "29": "Npc Equipment Durability Value Change [Right Hand Current Weapon]",
@@ -4708,7 +4736,7 @@
     {
       "name": "SpecialAtkRateType",
       "values": {
-        "1": "Hollow Count",
+        "1": "Hollow Level",
         "2": "Sin"
       }
     },

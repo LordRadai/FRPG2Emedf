@@ -4,6 +4,5 @@ Collection of DarkScript3 defs for Dark Souls 2 Scholar of the First Sin EventMa
 
 ### TODO
 Enums that need to be revised are:
-* StatusEffectType
 * ChrStatusFlag
 * ChrStatusValue

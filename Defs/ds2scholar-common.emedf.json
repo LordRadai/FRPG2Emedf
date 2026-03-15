@@ -1940,7 +1940,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument0",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -1952,21 +1952,6 @@
               "unk2": 0,
               "unk3": 4,
               "unk4": 0
-            },
-            {
-              "name": "Argument1",
-              "type": 2,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 0,
-              "increment": 0,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 4,
-              "unk4": 0,
-              "vararg": true
             }
           ]
         },
@@ -2003,7 +1988,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument0",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -2015,21 +2000,6 @@
               "unk2": 0,
               "unk3": 4,
               "unk4": 0
-            },
-            {
-              "name": "Argument1",
-              "type": 2,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 0,
-              "increment": 0,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 4,
-              "unk4": 0,
-              "vararg": true
             }
           ]
         },
@@ -2152,22 +2122,8 @@
               "unk4": 0
             },
             {
-              "name": "Argument0",
-              "type": 2,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 0,
-              "increment": 0,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 4,
-              "unk4": 0
-            },
-            {
-              "name": "Argument1",
-              "type": 2,
+              "name": "Arguments",
+              "type": 5,
               "enum_name": null,
               "default": 0,
               "min": 0,
@@ -3498,7 +3454,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument0",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -3510,21 +3466,6 @@
               "unk2": 0,
               "unk3": 4,
               "unk4": 0
-            },
-            {
-              "name": "Argument1",
-              "type": 2,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 0,
-              "increment": 0,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 4,
-              "unk4": 0,
-              "vararg": true
             }
           ]
         },
@@ -4119,7 +4060,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument0",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -4131,21 +4072,6 @@
               "unk2": 0,
               "unk3": 4,
               "unk4": 0
-            },
-            {
-              "name": "Argument1",
-              "type": 2,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 0,
-              "increment": 0,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 4,
-              "unk4": 0,
-              "vararg": true
             }
           ]
         },
@@ -4168,7 +4094,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument0",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -4180,21 +4106,6 @@
               "unk2": 0,
               "unk3": 4,
               "unk4": 0
-            },
-            {
-              "name": "Argument1",
-              "type": 2,
-              "enum_name": null,
-              "default": 0,
-              "min": 0,
-              "max": 0,
-              "increment": 0,
-              "format_string": "%d",
-              "unk1": 0,
-              "unk2": 0,
-              "unk3": 4,
-              "unk4": 0,
-              "vararg": true
             }
           ]
         },

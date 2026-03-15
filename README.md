@@ -4,8 +4,6 @@ Collection of DarkScript3 defs for Dark Souls 2 Scholar of the First Sin EventMa
 
 ### TODO
 Events that need to be revised are:
-* 1000-20
-* 1000-21
 * IncreaseAttackUnknown
 * DrawDisableFullbodySFX (arg1)
 * ApplySpEffectAndEndEventIfEventFlag (arg3)

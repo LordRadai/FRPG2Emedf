@@ -1043,13 +1043,13 @@
           "index": 16,
           "args": [
             {
-              "name": "Damage Attribute",
+              "name": "Trigger Damage Type",
               "type": 0,
-              "enum_name": "DamageAttribute",
+              "enum_name": "DamageTypeTrigger",
               "default": 0,
               "min": 0,
-              "max": 255,
-              "increment": 1,
+              "max": 0,
+              "increment": 0,
               "format_string": "%d",
               "unk1": 0,
               "unk2": 0,
@@ -4907,7 +4907,7 @@
       }
     },
     {
-      "name": "DamageAttribute",
+      "name": "DamageTypeTrigger",
       "values": {
         "0": "None",
         "1": "Physical",

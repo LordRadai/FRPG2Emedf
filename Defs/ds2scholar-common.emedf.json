@@ -10,7 +10,7 @@
           "index": 0,
           "args": [
             {
-              "name": "Status Type",
+              "name": "Status",
               "type": 0,
               "enum_name": "ChrStatusValue",
               "default": 0,
@@ -58,7 +58,7 @@
           "index": 1,
           "args": [
             {
-              "name": "Status Type",
+              "name": "Status",
               "type": 0,
               "enum_name": "ChrStatusRate",
               "default": 0,
@@ -120,7 +120,7 @@
               "unk4": 0
             },
             {
-              "name": "Disguise Index",
+              "name": "Index",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -154,7 +154,7 @@
           "index": 3,
           "args": [
             {
-              "name": "Flag Type",
+              "name": "Flag",
               "type": 0,
               "enum_name": "ChrStatusFlag",
               "default": 0,
@@ -568,7 +568,7 @@
           "index": 9,
           "args": [
             {
-              "name": "Status Type",
+              "name": "Status",
               "type": 0,
               "enum_name": "ChrStatusValue32",
               "default": 0,
@@ -859,7 +859,7 @@
           ]
         },
         {
-          "name": "Owned Soul Attack Power Multiplier",
+          "name": "Soul Attack Rate",
           "index": 14,
           "args": [
             {
@@ -949,13 +949,13 @@
           ]
         },
         {
-          "name": "Apply Special Scaling To Weapon",
+          "name": "Special Attack Rate",
           "index": 15,
           "args": [
             {
               "name": "Type",
               "type": 0,
-              "enum_name": "SpecialScalingType",
+              "enum_name": "SpecialAtkRateType",
               "default": 0,
               "min": 0,
               "max": 0,
@@ -967,7 +967,7 @@
               "unk4": 0
             },
             {
-              "name": "Count At Minimum",
+              "name": "Minimum Value",
               "type": 0,
               "enum_name": null,
               "default": 0,
@@ -981,7 +981,7 @@
               "unk4": 0
             },
             {
-              "name": "Count At Maximum",
+              "name": "Maximum Value",
               "type": 0,
               "enum_name": null,
               "default": 0,
@@ -995,7 +995,7 @@
               "unk4": 0
             },
             {
-              "name": "Scaling At Minimum",
+              "name": "Rate At Minimum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1009,7 +1009,7 @@
               "unk4": 0
             },
             {
-              "name": "Scaling At Maximum",
+              "name": "Rate At Maximum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1039,7 +1039,7 @@
           ]
         },
         {
-          "name": "Damage Bomb",
+          "name": "Damage Explosion",
           "index": 16,
           "args": [
             {
@@ -1281,7 +1281,7 @@
           ]
         },
         {
-          "name": "Modify Attribute By Current Value",
+          "name": "Level Status Correction",
           "index": 19,
           "args": [
             {
@@ -1357,7 +1357,7 @@
           ]
         },
         {
-          "name": "Unknown Command 1000[20]",
+          "name": "NPC Mimicry Lottery",
           "index": 20,
           "args": [
             {
@@ -1377,11 +1377,11 @@
           ]
         },
         {
-          "name": "Unknown Command 1000[21]",
+          "name": "NPC Mimicry",
           "index": 21,
           "args": [
             {
-              "name": "Unknown1",
+              "name": "SpEffect ID 1",
               "type": 5,
               "enum_name": null,
               "default": 0,
@@ -1395,7 +1395,7 @@
               "unk4": 0
             },
             {
-              "name": "Unknown2",
+              "name": "SpEffect ID 2",
               "type": 5,
               "enum_name": null,
               "default": 0,
@@ -1409,7 +1409,7 @@
               "unk4": 0
             },
             {
-              "name": "Unknown3",
+              "name": "SpEffect ID 3",
               "type": 5,
               "enum_name": null,
               "default": 0,
@@ -2245,7 +2245,7 @@
       ]
     },
     {
-      "name": "Character Combat Properties II",
+      "name": "Status Control",
       "index": 100090,
       "instrs": [
         {
@@ -2610,7 +2610,7 @@
           "args": []
         },
         {
-          "name": "Increase Attack (Unknown)",
+          "name": "Increase Attack Power (Enemy)",
           "index": 9,
           "args": [
             {
@@ -4704,9 +4704,9 @@
       }
     },
     {
-      "name": "SpecialScalingType",
+      "name": "SpecialAtkRateType",
       "values": {
-        "1": "Hollowing",
+        "1": "Hollow Count",
         "2": "Sin"
       }
     },
@@ -4721,7 +4721,9 @@
         "6": "Dexterity",
         "7": "Intelligence",
         "8": "Faith",
-        "9": "Adaptability"
+        "9": "Adaptability",
+        "10": "Agility",
+        "11": "Luck"
       }
     },
     {

@@ -10,7 +10,7 @@
           "index": 0,
           "args": [
             {
-              "name": "Status Type",
+              "name": "Status",
               "type": 0,
               "enum_name": "ChrStatusValue",
               "default": 0,
@@ -58,7 +58,7 @@
           "index": 1,
           "args": [
             {
-              "name": "Status Type",
+              "name": "Status",
               "type": 0,
               "enum_name": "ChrStatusRate",
               "default": 0,
@@ -120,7 +120,7 @@
               "unk4": 0
             },
             {
-              "name": "Disguise Index",
+              "name": "Index",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -154,7 +154,7 @@
           "index": 3,
           "args": [
             {
-              "name": "Flag Type",
+              "name": "Flag",
               "type": 0,
               "enum_name": "ChrStatusFlag",
               "default": 0,
@@ -568,7 +568,7 @@
           "index": 9,
           "args": [
             {
-              "name": "Status Type",
+              "name": "Status",
               "type": 0,
               "enum_name": "ChrStatusValue32",
               "default": 0,
@@ -859,7 +859,7 @@
           ]
         },
         {
-          "name": "Owned Soul Attack Power Multiplier",
+          "name": "Soul Attack Rate",
           "index": 14,
           "args": [
             {
@@ -949,13 +949,13 @@
           ]
         },
         {
-          "name": "Apply Special Scaling To Weapon",
+          "name": "Special Attack Rate",
           "index": 15,
           "args": [
             {
               "name": "Type",
               "type": 0,
-              "enum_name": "SpecialScalingType",
+              "enum_name": "SpecialAtkRateType",
               "default": 0,
               "min": 0,
               "max": 0,
@@ -967,7 +967,7 @@
               "unk4": 0
             },
             {
-              "name": "Count At Minimum",
+              "name": "Minimum Value",
               "type": 0,
               "enum_name": null,
               "default": 0,
@@ -981,7 +981,7 @@
               "unk4": 0
             },
             {
-              "name": "Count At Maximum",
+              "name": "Maximum Value",
               "type": 0,
               "enum_name": null,
               "default": 0,
@@ -995,7 +995,7 @@
               "unk4": 0
             },
             {
-              "name": "Scaling At Minimum",
+              "name": "Rate At Minimum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1009,7 +1009,7 @@
               "unk4": 0
             },
             {
-              "name": "Scaling At Maximum",
+              "name": "Rate At Maximum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1039,11 +1039,11 @@
           ]
         },
         {
-          "name": "Unknown Command 1000[16]",
+          "name": "Damage Explosion",
           "index": 16,
           "args": [
             {
-              "name": "Unknown1",
+              "name": "Unknown0",
               "type": 0,
               "enum_name": null,
               "default": 0,
@@ -1085,7 +1085,7 @@
               "unk4": 0
             },
             {
-              "name": "Unknown2",
+              "name": "Flag",
               "type": 0,
               "enum_name": null,
               "default": 0,
@@ -1101,7 +1101,7 @@
           ]
         },
         {
-          "name": "Apply Cycle Scaling To Weapon",
+          "name": "Adjust Damage By Round",
           "index": 17,
           "args": [
             {
@@ -1133,7 +1133,7 @@
               "unk4": 0
             },
             {
-              "name": "Scaling At Minimum",
+              "name": "Minimum Value",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1147,7 +1147,7 @@
               "unk4": 0
             },
             {
-              "name": "Scaling At Maximum",
+              "name": "Maximum Value",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1161,9 +1161,9 @@
               "unk4": 0
             },
             {
-              "name": "Unknown",
+              "name": "Type",
               "type": 0,
-              "enum_name": null,
+              "enum_name": "TargetCharacter",
               "default": 0,
               "min": 0,
               "max": 255,
@@ -1177,7 +1177,7 @@
           ]
         },
         {
-          "name": "Apply Equip Load-Based Flat Damage To Weapon",
+          "name": "Adjust Damage By Weight",
           "index": 18,
           "args": [
             {
@@ -1281,7 +1281,7 @@
           ]
         },
         {
-          "name": "Modify Attribute By Current Value",
+          "name": "Level Status Correction",
           "index": 19,
           "args": [
             {
@@ -1327,7 +1327,7 @@
               "unk4": 0
             },
             {
-              "name": "Bonus At Min",
+              "name": "Minimum Value",
               "type": 3,
               "enum_name": null,
               "default": 0,
@@ -1341,7 +1341,7 @@
               "unk4": 0
             },
             {
-              "name": "Bonus At Max",
+              "name": "Maximum Value",
               "type": 3,
               "enum_name": null,
               "default": 0,
@@ -1357,7 +1357,7 @@
           ]
         },
         {
-          "name": "Unknown Command 1000[20]",
+          "name": "NPC Mimicry Lottery",
           "index": 20,
           "args": [
             {
@@ -1377,11 +1377,11 @@
           ]
         },
         {
-          "name": "Unknown Command 1000[21]",
+          "name": "NPC Mimicry",
           "index": 21,
           "args": [
             {
-              "name": "Unknown1",
+              "name": "SpEffect ID 1",
               "type": 5,
               "enum_name": null,
               "default": 0,
@@ -1395,7 +1395,7 @@
               "unk4": 0
             },
             {
-              "name": "Unknown2",
+              "name": "SpEffect ID 2",
               "type": 5,
               "enum_name": null,
               "default": 0,
@@ -1409,7 +1409,7 @@
               "unk4": 0
             },
             {
-              "name": "Unknown3",
+              "name": "SpEffect ID 3",
               "type": 5,
               "enum_name": null,
               "default": 0,
@@ -2245,7 +2245,7 @@
       ]
     },
     {
-      "name": "Character Combat Properties II",
+      "name": "Status Control",
       "index": 100090,
       "instrs": [
         {
@@ -2610,7 +2610,7 @@
           "args": []
         },
         {
-          "name": "Increase Attack (Unknown)",
+          "name": "Increase Attack Power (Enemy)",
           "index": 9,
           "args": [
             {
@@ -2962,7 +2962,7 @@
             {
               "name": "Attack Power Type",
               "type": 0,
-              "enum_name": "BulletAttackType",
+              "enum_name": "BulletAttackPowerType",
               "default": 0,
               "min": 0,
               "max": 255,
@@ -4545,8 +4545,8 @@
         "1": "Weight",
         "2": "Attack Poise Damage",
         "3": "Fall Damage Protection Modifier",
-        "4": "Attack Correction Moribund HP Ratio (0-100%)",
-        "5": "Damage Taken And Near-death HP Ratio (0-100%)",
+        "4": "Attack Correction Near-death HP Ratio (0-100%)",
+        "5": "Damage Taken Near-death HP Ratio (0-100%)",
         "6": "Vigor",
         "7": "Endurance",
         "8": "Vitality",
@@ -4559,8 +4559,34 @@
         "18": "HP On Kill",
         "19": "Material Replacement",
         "20": "Attunement Slots",
-        "21": "Anti-Stability Modifier",
+        "21": "Block Stamina Damage Bonus",
         "22": "Unknown (22)"
+      }
+    },
+    {
+      "name": "ChrStatusValue32",
+      "values": {
+        "8": "HP Gradual Decrease Value When Using Spell [Magic]",
+        "9": "HP Gradual Decrease Value When Using Spell [Miracle]",
+        "10": "HP Gradual Decrease Value When Using Spell [Sorcery]",
+        "11": "HP Gradual Decrease Value When Using Spell [Dark Magic]",
+        "12": "HP Gradual Decrease Value When Using Spell [Dark Miracle]",
+        "13": "Equipment Durability Value Change [Left Hand Current Weapon]",
+        "14": "Equipment Durability Value Change [Right Hand Current Weapon]",
+        "15": "Equipment Durability Value Change [All Equipped Weapons]",
+        "16": "Equipment Durability Value Change [All Equipment Armor]",
+        "17": "Equipment Durability Value Change [All Equipment Rings]",
+        "18": "Spirit Mimicry",
+        "19": "Player Light Switching",
+        "20": "Field Of View Switching",
+        "21": "Wetness Mimicry",
+        "22": "SFXID When HP Recovers When Defeated",
+        "23": "SFX Dummy Poly ID When Recovering HP When Defeated",
+        "25": "Npc Equip Weight",
+        "30": "Unknown (30)",
+        "31": "Unknown (31)",
+        "32": "Unknown (32)",
+        "33": "Armor Poise"
       }
     },
     {
@@ -4608,10 +4634,10 @@
         "54": "Spell Damage Multiplier [Sorcery]",
         "55": "Spell Damage Multiplier [Dark Magic]",
         "56": "Spell Damage Multiplier [Dark Miracle]",
-        "57": "Shield Stability",
-        "58": "Enemy Damage",
-        "59": "Enemy Damage Reduction",
-        "60": "Equip Weight Rate",
+        "57": "Shield Stability Rate",
+        "58": "Enemy Damage Multiplier",
+        "59": "Enemy Damage Cut Rate",
+        "60": "Equip Weight Multiplier",
         "61": "Back Damage Physical Cut Rate",
         "62": "Back Damage Elemental Cut Rate"
       }
@@ -4637,31 +4663,36 @@
         "24": "Damage Disabled",
         "25": "Reduce Back Damage",
         "27": "Disable Chr Phantom Color",
-        "28": "Unknown (28)",
+        "28": "Enable Alt Dead Type ID",
         "29": "Disable Headshot Damage",
-        "31": "Unknown (31)",
-        "33": "Unknown (33)",
-        "34": "Unknown (34)",
-        "39": "Unknown (39)",
-        "40": "Unknown (40)",
-        "41": "Unknown (41)",
+        "31": "Enable Simpleton Ring",
+        "33": "Disable Environment SFX",
+        "34": "Physical Damage Immunity",
+        "35": "Magic Damage Immunity",
+        "36": "Lightning Damage Immunity",
+        "37": "Fire Damage Immunity",
+        "38": "Dark Damage Immunity",
+        "39": "Poison Immunity",
+        "40": "Bleed Immunity",
+        "41": "Weapon Destruction Immunity",
         "42": "Curse Immunity",
-        "43": "Unknown (43)",
-        "44": "Unknown (44)",
-        "46": "Unknown (46)",
+        "43": "Combustion Immunity",
+        "44": "Toxicity Immunity",
+        "45": "Petrification Immunity",
+        "46": "Enable Bullet Passthrough",
         "49": "Unknown (49)",
-        "50": "Unknown (50)",
-        "51": "Unknown (51)",
-        "52": "Unknown (52)",
-        "53": "Unknown (53)",
-        "54": "Unknown (54)",
+        "50": "Disable Armor SE",
+        "51": "Disable Stun Damage",
+        "52": "Disable Poise Damage",
+        "53": "Disable Environment Damage",
+        "54": "Disable Damage SFX",
         "55": "Disable Lock On",
-        "56": "Unknown (56)",
+        "56": "Disable Model Shadow",
         "57": "Disable Healthbar",
         "58": "Disable Hollowing",
         "59": "Disable Soul Absorption",
         "60": "Enable Invisibility",
-        "61": "Unknown (61)"
+        "61": "Enable Sensor Invisibility"
       }
     },
     {
@@ -4673,35 +4704,9 @@
       }
     },
     {
-      "name": "ChrStatusValue32",
+      "name": "SpecialAtkRateType",
       "values": {
-        "8": "HP Gradual Decrease Value When Using Spell [Magic]",
-        "9": "HP Gradual Decrease Value When Using Spell [Miracle]",
-        "10": "HP Gradual Decrease Value When Using Spell [Sorcery]",
-        "11": "HP Gradual Decrease Value When Using Spell [Dark Magic]",
-        "12": "HP Gradual Decrease Value When Using Spell [Dark Miracle]",
-        "13": "Equipment Durability Value Change [Left Hand Current Weapon]",
-        "14": "Equipment Durability Value Change [Right Hand Current Weapon]",
-        "15": "Equipment Durability Value Change [All Equipped Weapons]",
-        "16": "Equipment Durability Value Change [All Equipment Armor]",
-        "17": "Equipment Durability Value Change [All Equipment Rings]",
-        "18": "Spirit Mimicry",
-        "19": "Player Light Switching",
-        "20": "Field Of View Switching",
-        "21": "Wetness Mimicry",
-        "22": "SFXID When HP Recovers When Defeated",
-        "23": "SFX Dummy Poly ID When Recovering HP When Defeated",
-        "25": "Unknown (25)",
-        "30": "Unknown (30)",
-        "31": "Unknown (31)",
-        "32": "Unknown (32)",
-        "33": "Unknown (33)"
-      }
-    },
-    {
-      "name": "SpecialScalingType",
-      "values": {
-        "1": "Hollowing",
+        "1": "Hollow Count",
         "2": "Sin"
       }
     },
@@ -4716,7 +4721,9 @@
         "6": "Dexterity",
         "7": "Intelligence",
         "8": "Faith",
-        "9": "Adaptability"
+        "9": "Adaptability",
+        "10": "Agility",
+        "11": "Luck"
       }
     },
     {
@@ -4864,20 +4871,20 @@
       }
     },
     {
-      "name": "BulletAttackType",
+      "name": "BulletAttackPowerType",
       "values": {
         "0": "None",
-        "1": "Physics Muscle Strength",
-        "2": "Physics Skill",
+        "1": "Strength",
+        "2": "Dexterity",
         "3": "Magic Power",
-        "4": "Thunder",
+        "4": "Lightning",
         "5": "Flame",
-        "6": "Darkness",
+        "6": "Dark",
         "7": "Poison",
         "8": "Bleeding",
         "9": "(Weapon Destruction) (Not Supported)",
         "10": "(Curse) (Not Supported)",
-        "11": "(Abyss) (Not Supported)"
+        "11": "(Mundane) (Not Supported)"
       }
     },
     {
@@ -4890,10 +4897,10 @@
     {
       "name": "SpellParryType",
       "values": {
-        "0": "Magic Power",
-        "1": "Thunder",
-        "2": "Flame",
-        "3": "Darkness"
+        "0": "Magic",
+        "1": "Lightning",
+        "2": "Fire",
+        "3": "Dark"
       }
     }
   ],

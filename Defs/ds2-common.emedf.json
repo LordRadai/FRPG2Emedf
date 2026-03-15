@@ -1707,7 +1707,7 @@
           ]
         },
         {
-          "name": "Effect Correction Settings",
+          "name": "Network Effect Correction",
           "index": 2,
           "args": [
             {
@@ -1741,7 +1741,7 @@
           ]
         },
         {
-          "name": "Effect Time Shortened",
+          "name": "Target Effect Time Reduction",
           "index": 3,
           "args": [
             {
@@ -1789,7 +1789,7 @@
           ]
         },
         {
-          "name": "Effect Time Reduction Permanent",
+          "name": "Effect Time Reduction",
           "index": 4,
           "args": [
             {

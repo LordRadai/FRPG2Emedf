@@ -8,7 +8,7 @@
 // ==/EMEVD==
 
 Event(90000010, Default, function() {
-    CreateBullet(150900512, 150900512, BulletAttackType.None, 1);
+    CreateBullet(150900512, 150900512, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
@@ -29,7 +29,7 @@ Event(91060010, Default, function() {
 Event(91060020, Default, function() {
     EffectSFX(1995, 220, SFXDeletionTiming.Invalid, 0, StartAndEndConditions.None, 0);
     EffectSFX(1996, 220, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    IncreaseDefensePower(60, EquipmentAttribute.AllPhysical, 500);
+    IncreaseDefensePower(60, EquipmentAttribute.Physical, 500);
 });
 
 Event(91060030, Default, function() {
@@ -48,11 +48,11 @@ Event(91180010, Default, function() {
     EffectSFX(4070, 220, SFXDeletionTiming.Invalid, 0, StartAndEndConditions.None, 0);
     EffectSFX(4071, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     AllowEffectTimeExtension();
-    IncreaseAttackUnknown(60, EquipmentAttribute.AllPhysical, 50);
+    IncreaseAttackPowerEnemy(60, EquipmentAttribute.Physical, 50);
 });
 
 Event(91270000, Default, function() {
-    CreateBullet(112701300, 112701300, BulletAttackType.None, 1);
+    CreateBullet(112701300, 112701300, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
@@ -127,39 +127,39 @@ Event(92120020, Default, function() {
 });
 
 Event(93050010, Default, function() {
-    CreateBullet(130500000, 130500000, BulletAttackType.None, 1);
+    CreateBullet(130500000, 130500000, BulletAttackPowerType.None, 1);
     EffectSFX(1821, 30, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     InfiniteEffectTime();
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 0, 1);
     InfiniteEffectTime();
-    IncreaseAttackUnknown(0, EquipmentAttribute.Fire, 0);
+    IncreaseAttackPowerEnemy(0, EquipmentAttribute.Fire, 0);
 });
 
 Event(93050011, Default, function() {
-    CreateBullet(130510000, 130510000, BulletAttackType.None, 1);
+    CreateBullet(130510000, 130510000, BulletAttackPowerType.None, 1);
     EffectSFX(8461, 30, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     InfiniteEffectTime();
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 0, 1);
     InfiniteEffectTime();
-    IncreaseAttackUnknown(0, EquipmentAttribute.Fire, 0);
+    IncreaseAttackPowerEnemy(0, EquipmentAttribute.Fire, 0);
 });
 
 Event(93180010, Default, function() {
     InfiniteEffectTime();
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 0, 1.35);
-    IncreaseAttackUnknown(0, EquipmentAttribute.Dark, 0);
+    IncreaseAttackPowerEnemy(0, EquipmentAttribute.Dark, 0);
 });
 
 Event(93180020, Default, function() {
     InfiniteEffectTime();
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 0, 1.45);
-    IncreaseAttackUnknown(0, EquipmentAttribute.Dark, 0);
+    IncreaseAttackPowerEnemy(0, EquipmentAttribute.Dark, 0);
 });
 
 Event(93320010, Default, function() {
     EffectSFX(1840, 100, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 45, 1);
-    IncreaseAttackUnknown(45, EquipmentAttribute.Lightning, 250);
+    IncreaseAttackPowerEnemy(45, EquipmentAttribute.Lightning, 250);
 });
 
 Event(93320020, Default, function() {
@@ -176,7 +176,7 @@ Event(93320030, Default, function() {
 Event(93330010, Default, function() {
     EffectSFX(1925, 220, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     InfiniteEffectTime();
-    IncreaseAttackUnknown(0, EquipmentAttribute.Dark, 0);
+    IncreaseAttackPowerEnemy(0, EquipmentAttribute.Dark, 0);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 0, 1.4);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenReceivingDamage, 0, 0.6);
 });
@@ -184,7 +184,7 @@ Event(93330010, Default, function() {
 Event(93340010, Default, function() {
     EffectSFX(1845, 100, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 45, 1);
-    IncreaseAttackUnknown(45, EquipmentAttribute.Lightning, 310);
+    IncreaseAttackPowerEnemy(45, EquipmentAttribute.Lightning, 310);
 });
 
 Event(93340020, Default, function() {
@@ -266,70 +266,70 @@ Event(96191020, Default, function() {
 });
 
 Event(96500010, Default, function() {
-    CreateBullet(165000000, 165000000, BulletAttackType.None, 1);
-    CreateBullet(165000004, 165000004, BulletAttackType.None, 1);
+    CreateBullet(165000000, 165000000, BulletAttackPowerType.None, 1);
+    CreateBullet(165000004, 165000004, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
 Event(96500011, Default, function() {
-    CreateBullet(165000000, 165000000, BulletAttackType.None, 1);
+    CreateBullet(165000000, 165000000, BulletAttackPowerType.None, 1);
     VirtualCommand(3.7);
 });
 
 Event(96500012, Default, function() {
-    CreateBullet(165000000, 165000000, BulletAttackType.None, 1);
+    CreateBullet(165000000, 165000000, BulletAttackPowerType.None, 1);
     VirtualCommand(4.4);
 });
 
 Event(96500013, Default, function() {
-    CreateBullet(165000000, 165000000, BulletAttackType.None, 1);
+    CreateBullet(165000000, 165000000, BulletAttackPowerType.None, 1);
     VirtualCommand(2.4);
 });
 
 Event(96500014, Default, function() {
-    CreateBullet(165000000, 165000000, BulletAttackType.None, 1);
+    CreateBullet(165000000, 165000000, BulletAttackPowerType.None, 1);
     VirtualCommand(1.8);
 });
 
 Event(96500020, Default, function() {
-    CreateBullet(165000001, 165000001, BulletAttackType.None, 1);
-    CreateBullet(165000005, 165000005, BulletAttackType.None, 1);
+    CreateBullet(165000001, 165000001, BulletAttackPowerType.None, 1);
+    CreateBullet(165000005, 165000005, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
 Event(96500021, Default, function() {
-    CreateBullet(165000000, 165000001, BulletAttackType.None, 1);
+    CreateBullet(165000000, 165000001, BulletAttackPowerType.None, 1);
     VirtualCommand(3.7);
 });
 
 Event(96500022, Default, function() {
-    CreateBullet(165000000, 165000001, BulletAttackType.None, 1);
+    CreateBullet(165000000, 165000001, BulletAttackPowerType.None, 1);
     VirtualCommand(4.4);
 });
 
 Event(96500023, Default, function() {
-    CreateBullet(165000000, 165000001, BulletAttackType.None, 1);
+    CreateBullet(165000000, 165000001, BulletAttackPowerType.None, 1);
     VirtualCommand(2.4);
 });
 
 Event(96500024, Default, function() {
-    CreateBullet(165000000, 165000001, BulletAttackType.None, 1);
+    CreateBullet(165000000, 165000001, BulletAttackPowerType.None, 1);
     VirtualCommand(1.8);
 });
 
 Event(96530000, Default, function() {
     InfiniteEffectTime();
-    IncreaseAttackUnknown(3600, EquipmentAttribute.Fire, 250);
+    IncreaseAttackPowerEnemy(3600, EquipmentAttribute.Fire, 250);
 });
 
 Event(96540000, Default, function() {
-    IncreaseAttackUnknown(2, EquipmentAttribute.Fire, 150);
-    CreateBullet(165401000, 165401000, BulletAttackType.None, 1);
+    IncreaseAttackPowerEnemy(2, EquipmentAttribute.Fire, 150);
+    CreateBullet(165401000, 165401000, BulletAttackPowerType.None, 1);
 });
 
 Event(96570000, Default, function() {
     InfiniteEffectTime();
-    UnknownCommand100016(4, 165700000, 165700000, 20);
+    DamageExplosion(4, 165700000, 165700000, 20);
     ModifyStatusFlag(ChrStatusFlag.Unknown49, 0);
 });
 
@@ -339,40 +339,40 @@ Event(96590000, Default, function() {
 
 Event(96650000, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusFlag(ChrStatusFlag.Unknown33, 60);
-    ModifyStatusFlag(ChrStatusFlag.Unknown50, 60);
+    ModifyStatusFlag(ChrStatusFlag.DisableEnvironmentSFX, 60);
+    ModifyStatusFlag(ChrStatusFlag.DisableArmorSE, 60);
     ModifyStatusValue(ChrStatusValue.MaterialReplacement, 60, 41);
-    ModifyStatusValue32(ChrStatusValue32.SpiritMimicry, 60, 31);
-    ModifyStatusFlag(ChrStatusFlag.Unknown54, 60);
-    ModifyStatusFlag(ChrStatusFlag.Unknown34, 60);
-    ModifyStatusFlag(ChrStatusFlag.Unknown39, 60);
-    ModifyStatusFlag(ChrStatusFlag.Unknown40, 60);
-    ModifyStatusFlag(ChrStatusFlag.Unknown41, 60);
-    ModifyStatusFlag(ChrStatusFlag.Unknown43, 60);
-    ModifyStatusFlag(ChrStatusFlag.Unknown44, 60);
-    ModifyStatusFlag(ChrStatusFlag.Unknown46, 60);
+    ModifyStatusValue32(ChrStatusValue32.PhantomType, 60, 31);
+    ModifyStatusFlag(ChrStatusFlag.DisableDamageSFX, 60);
+    ModifyStatusFlag(ChrStatusFlag.PhysicalDamageImmunity, 60);
+    ModifyStatusFlag(ChrStatusFlag.PoisonImmunity, 60);
+    ModifyStatusFlag(ChrStatusFlag.BleedImmunity, 60);
+    ModifyStatusFlag(ChrStatusFlag.WeaponDestructionImmunity, 60);
+    ModifyStatusFlag(ChrStatusFlag.CombustionImmunity, 60);
+    ModifyStatusFlag(ChrStatusFlag.ToxicityImmunity, 60);
+    ModifyStatusFlag(ChrStatusFlag.EnableBulletPassthrough, 60);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenReceivingDamage, 0, 0.4);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 0, 0.7);
     ModifyStatusFlag(ChrStatusFlag.DisableBackstab, 0);
-    ModifyStatusFlag(ChrStatusFlag.Unknown52, 60);
-    ModifyStatusFlag(ChrStatusFlag.Unknown51, 60);
-    ModifyStatusFlag(ChrStatusFlag.Unknown53, 60);
+    ModifyStatusFlag(ChrStatusFlag.DisablePoiseDamage, 60);
+    ModifyStatusFlag(ChrStatusFlag.DisableStunDamage, 60);
+    ModifyStatusFlag(ChrStatusFlag.DisableEnvironmentDamage, 60);
 });
 
 Event(96650010, Default, function() {
-    CreateBullet(166500000, 166500000, BulletAttackType.None, 1);
+    CreateBullet(166500000, 166500000, BulletAttackPowerType.None, 1);
     VirtualCommand(5);
 });
 
 Event(96560000, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.WetnessMimicry, 0, 7);
+    ModifyStatusValue32(ChrStatusValue32.WetType, 0, 7);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 0, 1);
     SetDeathPermission(true);
 });
 
 Event(96560010, Default, function() {
-    IncreaseAttackUnknown(0, EquipmentAttribute.AllPhysical, 0);
+    IncreaseAttackPowerEnemy(0, EquipmentAttribute.Physical, 0);
 });
 
 Event(96560020, Default, function() {
@@ -381,33 +381,33 @@ Event(96560020, Default, function() {
 
 Event(96560100, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.WetnessMimicry, 0, 7);
+    ModifyStatusValue32(ChrStatusValue32.WetType, 0, 7);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenReceivingDamage, 0, 0.5);
     ModifyStatusValue(ChrStatusValue.Poise, 0, 30);
 });
 
 Event(96560110, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.WetnessMimicry, 0, 7);
+    ModifyStatusValue32(ChrStatusValue32.WetType, 0, 7);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 0, 1.25);
 });
 
 Event(96560200, Default, function() {
     EffectSFX(8346, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    CreateBullet(320090000, 320090000, BulletAttackType.None, 1);
+    CreateBullet(320090000, 320090000, BulletAttackPowerType.None, 1);
     VirtualCommand(5);
 });
 
 Event(96560210, Default, function() {
     EffectSFX(8346, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    CreateBullet(320090000, 320090000, BulletAttackType.None, 1);
+    CreateBullet(320090000, 320090000, BulletAttackPowerType.None, 1);
     VirtualCommand(5);
     SetDeathPermission(false);
 });
 
 Event(96560220, Default, function() {
     EffectSFX(8347, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    CreateBullet(320090000, 320090000, BulletAttackType.None, 1);
+    CreateBullet(320090000, 320090000, BulletAttackPowerType.None, 1);
     VirtualCommand(5);
 });
 
@@ -445,13 +445,13 @@ Event(96560420, Default, function() {
 });
 
 Event(96620000, Default, function() {
-    CreateBullet(166201000, 166201000, BulletAttackType.None, 1);
-    IncreaseAttackUnknown(3, EquipmentAttribute.AllPhysical, 0);
+    CreateBullet(166201000, 166201000, BulletAttackPowerType.None, 1);
+    IncreaseAttackPowerEnemy(3, EquipmentAttribute.Physical, 0);
 });
 
 Event(96660000, Default, function() {
-    CreateBullet(166604000, 166604000, BulletAttackType.None, 1);
-    IncreaseAttackUnknown(3, EquipmentAttribute.AllPhysical, 0);
+    CreateBullet(166604000, 166604000, BulletAttackPowerType.None, 1);
+    IncreaseAttackPowerEnemy(3, EquipmentAttribute.Physical, 0);
 });
 
 Event(96660010, Default, function() {
@@ -460,26 +460,26 @@ Event(96660010, Default, function() {
 
 Event(96700000, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusFlag(ChrStatusFlag.Unknown28, 0);
+    ModifyStatusFlag(ChrStatusFlag.EnableAltDeadTypeID, 0);
 });
 
 Event(96710010, Default, function() {
-    CreateBullet(167100000, 167100000, BulletAttackType.None, 1);
+    CreateBullet(167100000, 167100000, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
 Event(96710011, Default, function() {
-    CreateBullet(167100001, 167100001, BulletAttackType.None, 1);
+    CreateBullet(167100001, 167100001, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
 Event(96710012, Default, function() {
-    CreateBullet(167100002, 167100002, BulletAttackType.None, 1);
+    CreateBullet(167100002, 167100002, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
 Event(96710013, Default, function() {
-    CreateBullet(167100003, 167100003, BulletAttackType.None, 1);
+    CreateBullet(167100003, 167100003, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
@@ -489,36 +489,36 @@ Event(96710020, Default, function() {
 });
 
 Event(96711010, Default, function() {
-    CreateBullet(167110000, 167110000, BulletAttackType.None, 1);
+    CreateBullet(167110000, 167110000, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
 Event(96711011, Default, function() {
-    CreateBullet(167110001, 167110001, BulletAttackType.None, 1);
+    CreateBullet(167110001, 167110001, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
 Event(96711012, Default, function() {
-    CreateBullet(167110002, 167110002, BulletAttackType.None, 1);
+    CreateBullet(167110002, 167110002, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
 Event(96711013, Default, function() {
-    CreateBullet(167110003, 167110003, BulletAttackType.None, 1);
+    CreateBullet(167110003, 167110003, BulletAttackPowerType.None, 1);
     VirtualCommand(3);
 });
 
 Event(96740000, Default, function() {
-    ModifyStatusValue32(ChrStatusValue32.Unknown30, 0, 30);
-    ModifyStatusValue32(ChrStatusValue32.Unknown31, 0, 50);
-    ModifyStatusValue32(ChrStatusValue32.Unknown32, 0, 20);
+    ModifyStatusValue32(ChrStatusValue32.NpcEquipmentDurabilityValueChangeAllEquippedWeapons, 0, 30);
+    ModifyStatusValue32(ChrStatusValue32.NpcEquipmentDurabilityValueChangeAllEquipmentArmor, 0, 50);
+    ModifyStatusValue32(ChrStatusValue32.NpcEquipmentDurabilityValueChangeAllEquipmentRings, 0, 20);
     EffectSFX(867, 220, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     VirtualCommand(5);
 });
 
 Event(96720000, Default, function() {
-    CreateBullet(167200000, 167200000, BulletAttackType.None, 1);
-    IncreaseAttackUnknown(30, EquipmentAttribute.AllPhysical, 0);
+    CreateBullet(167200000, 167200000, BulletAttackPowerType.None, 1);
+    IncreaseAttackPowerEnemy(30, EquipmentAttribute.Physical, 0);
 });
 
 Event(96720010, Default, function() {
@@ -526,7 +526,7 @@ Event(96720010, Default, function() {
     ModifyStatusValue32(ChrStatusValue32.EquipmentDurabilityValueChangeRightHandCurrentWeapon, 0, -2);
     ModifyStatusValue32(ChrStatusValue32.EquipmentDurabilityValueChangeAllEquipmentArmor, 0, -2);
     ModifyStatusValue32(ChrStatusValue32.EquipmentDurabilityValueChangeAllEquipmentRings, 0, -1);
-    CreateBullet(167200001, 167200001, BulletAttackType.None, 1);
+    CreateBullet(167200001, 167200001, BulletAttackPowerType.None, 1);
 });
 
 Event(96720020, Default, function() {
@@ -541,16 +541,16 @@ Event(96750000, Default, function() {
 });
 
 Event(96750010, Default, function() {
-    IncreaseAttackUnknown(20, EquipmentAttribute.Fire, 100);
+    IncreaseAttackPowerEnemy(20, EquipmentAttribute.Fire, 100);
 });
 
 Event(96750100, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.WetnessMimicry, 0, 7);
+    ModifyStatusValue32(ChrStatusValue32.WetType, 0, 7);
 });
 
 Event(96750110, Default, function() {
-    ModifyStatusValue32(ChrStatusValue32.WetnessMimicry, 0.1, 10);
+    ModifyStatusValue32(ChrStatusValue32.WetType, 0.1, 10);
 });
 
 Event(96780000, Default, function() {
@@ -565,9 +565,9 @@ Event(96780100, Default, function() {
 
 Event(96790000, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.SpiritMimicry, 60, 40);
+    ModifyStatusValue32(ChrStatusValue32.PhantomType, 60, 40);
     ModifyStatusFlag(ChrStatusFlag.DisableLockOn, 0);
-    ModifyStatusFlag(ChrStatusFlag.Unknown56, 0);
+    ModifyStatusFlag(ChrStatusFlag.DisableModelShadow, 0);
     ModifyStatusFlag(ChrStatusFlag.DisableHealthbar, 0);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 0, 1.2);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenReceivingDamage, 0, 0.8);
@@ -575,9 +575,9 @@ Event(96790000, Default, function() {
 
 Event(96790010, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.SpiritMimicry, 60, 41);
+    ModifyStatusValue32(ChrStatusValue32.PhantomType, 60, 41);
     ModifyStatusFlag(ChrStatusFlag.DisableLockOn, 0);
-    ModifyStatusFlag(ChrStatusFlag.Unknown56, 0);
+    ModifyStatusFlag(ChrStatusFlag.DisableModelShadow, 0);
     ModifyStatusFlag(ChrStatusFlag.DisableHealthbar, 0);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenAttacking, 0, 1.2);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenReceivingDamage, 0, 0.8);
@@ -585,7 +585,7 @@ Event(96790010, Default, function() {
 
 Event(96790020, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.SpiritMimicry, 60, 42);
+    ModifyStatusValue32(ChrStatusValue32.PhantomType, 60, 42);
     EffectSFX(8651, 200, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     EffectSFX(8651, 201, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     EffectSFX(8651, 202, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
@@ -598,7 +598,7 @@ Event(96790020, Default, function() {
 
 Event(96790030, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.SpiritMimicry, 60, 43);
+    ModifyStatusValue32(ChrStatusValue32.PhantomType, 60, 43);
     EffectSFX(8648, 200, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     EffectSFX(8648, 201, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     EffectSFX(8648, 202, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
@@ -624,18 +624,18 @@ Event(96800000, Default, function() {
 
 Event(96810000, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusFlag(ChrStatusFlag.Unknown28, 0);
+    ModifyStatusFlag(ChrStatusFlag.EnableAltDeadTypeID, 0);
 });
 
 Event(96850000, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.WetnessMimicry, 0, 8);
-    IncreaseAttackUnknown(0, EquipmentAttribute.Poison, 20);
+    ModifyStatusValue32(ChrStatusValue32.WetType, 0, 8);
+    IncreaseAttackPowerEnemy(0, EquipmentAttribute.Poison, 20);
 });
 
 Event(96880000, Default, function() {
     EffectSFX(8619, 201, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    ScaleSpEffectByAttribute(SpEffectScaleType.Duration, AttributeType.Intelligence, 10, 21, 0.75, 1.5, 1, 1, 1, 1);
+    ScaleSpEffectByAttribute(EffectCorrectionTarget.Duration, AttributeType.Intelligence, 10, 21, 0.75, 1.5, 1, 1, 1, 1);
     VirtualCommand(45);
 });
 
@@ -653,15 +653,15 @@ Event(96900000, Default, function() {
 
 Event(96920000, Default, function() {
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenReceivingDamage, 1, 0.3);
-    CreateBullet(169200500, 169200500, BulletAttackType.None, 1);
-    CreateBullet(169200501, 169200501, BulletAttackType.None, 1);
+    CreateBullet(169200500, 169200500, BulletAttackPowerType.None, 1);
+    CreateBullet(169200501, 169200501, BulletAttackPowerType.None, 1);
     VirtualCommand(1);
 });
 
 Event(96920010, Default, function() {
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenReceivingDamage, 1, 0.1);
-    CreateBullet(169200510, 169200510, BulletAttackType.None, 1);
-    CreateBullet(169200511, 169200511, BulletAttackType.None, 1);
+    CreateBullet(169200510, 169200510, BulletAttackPowerType.None, 1);
+    CreateBullet(169200511, 169200511, BulletAttackPowerType.None, 1);
     VirtualCommand(1);
 });
 
@@ -721,40 +721,40 @@ Event(98350010, Default, function() {
 
 Event(98382000, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.SpiritMimicry, 60, 209);
+    ModifyStatusValue32(ChrStatusValue32.PhantomType, 60, 209);
     ModifyStatusFlag(ChrStatusFlag.DisableLockOn, 0);
 });
 
 Event(98660010, Default, function() {
     EffectSFX(24045, 10, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    ScaleSpEffectByAttribute(SpEffectScaleType.Duration, AttributeType.Intelligence, 10, 21, 0.75, 1.5, 1, 1, 1, 1);
+    ScaleSpEffectByAttribute(EffectCorrectionTarget.Duration, AttributeType.Intelligence, 10, 21, 0.75, 1.5, 1, 1, 1, 1);
     VirtualCommand(45);
 });
 
 Event(98720010, Default, function() {
-    CreateBullet(72230011, 192230011, BulletAttackType.None, 0);
+    CreateBullet(72230011, 192230011, BulletAttackPowerType.None, 0);
 });
 
 Event(98720011, Default, function() {
     EffectSFX(5222, 249, SFXDeletionTiming.EffectTimeExpired, 6, StartAndEndConditions.None, 0);
-    IncreaseAttackUnknown(65, EquipmentAttribute.AllPhysical, 50);
-    IncreaseDefensePower(65, EquipmentAttribute.AllPhysical, 75);
+    IncreaseAttackPowerEnemy(65, EquipmentAttribute.Physical, 50);
+    IncreaseDefensePower(65, EquipmentAttribute.Physical, 75);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenReceivingDamage, 65, 0.9);
 });
 
 Event(98830000, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.SpiritMimicry, 60, 40);
+    ModifyStatusValue32(ChrStatusValue32.PhantomType, 60, 40);
     ModifyStatusFlag(ChrStatusFlag.DisableLockOn, 0);
-    ModifyStatusFlag(ChrStatusFlag.Unknown56, 0);
+    ModifyStatusFlag(ChrStatusFlag.DisableModelShadow, 0);
     ModifyStatusFlag(ChrStatusFlag.DisableHealthbar, 0);
 });
 
 Event(98830010, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusValue32(ChrStatusValue32.SpiritMimicry, 60, 41);
+    ModifyStatusValue32(ChrStatusValue32.PhantomType, 60, 41);
     ModifyStatusFlag(ChrStatusFlag.DisableLockOn, 0);
-    ModifyStatusFlag(ChrStatusFlag.Unknown56, 0);
+    ModifyStatusFlag(ChrStatusFlag.DisableModelShadow, 0);
     ModifyStatusFlag(ChrStatusFlag.DisableHealthbar, 0);
 });
 

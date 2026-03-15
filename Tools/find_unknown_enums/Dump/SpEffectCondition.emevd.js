@@ -66,7 +66,7 @@ Event(758, Default, function() {
 });
 
 Event(759, Default, function() {
-    SpellParrySetting(0, SpellParryType.MagicPower, 0);
+    SpellParrySetting(0, SpellParryType.Magic, 0);
 });
 
 Event(760, Default, function() {
@@ -142,11 +142,11 @@ Event(777, Default, function() {
 });
 
 Event(778, Default, function() {
-    PreventStatusEffect(StatusEffectType.Oily, 0);
+    PreventStatusEffect(StatusEffectType.OilWet, 0);
 });
 
 Event(779, Default, function() {
-    ApplyStatusEffect(StatusEffectType.Oily, 0, 0, 0, 0, 0);
+    ApplyStatusEffect(StatusEffectType.OilWet, 0, 0, 0, 0, 0);
 });
 
 Event(780, Default, function() {
@@ -166,27 +166,27 @@ Event(783, Default, function() {
 });
 
 Event(784, Default, function() {
-    PreventStatusEffect(StatusEffectType.Unknown12, 0);
+    PreventStatusEffect(StatusEffectType.AshCoating, 0);
 });
 
 Event(785, Default, function() {
-    ApplyStatusEffect(StatusEffectType.Unknown12, 0, 0, 0, 0, 0);
+    ApplyStatusEffect(StatusEffectType.AshCoating, 0, 0, 0, 0, 0);
 });
 
 Event(786, Default, function() {
-    PreventStatusEffect(StatusEffectType.Unknown13, 0);
+    PreventStatusEffect(StatusEffectType.BronzeCoating, 0);
 });
 
 Event(787, Default, function() {
-    ApplyStatusEffect(StatusEffectType.Unknown13, 0, 0, 0, 0, 0);
+    ApplyStatusEffect(StatusEffectType.BronzeCoating, 0, 0, 0, 0, 0);
 });
 
 Event(788, Default, function() {
-    PreventStatusEffect(StatusEffectType.Unknown14, 0);
+    PreventStatusEffect(StatusEffectType.SnowCoating, 0);
 });
 
 Event(789, Default, function() {
-    ApplyStatusEffect(StatusEffectType.Unknown14, 0, 0, 0, 0, 0);
+    ApplyStatusEffect(StatusEffectType.SnowCoating, 0, 0, 0, 0, 0);
 });
 
 

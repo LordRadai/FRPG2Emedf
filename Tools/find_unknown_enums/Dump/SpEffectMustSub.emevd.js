@@ -27,8 +27,8 @@ Event(871, Default, function(statusEffect) {
     ClearStatusEffect(statusEffect);
 });
 
-Event(872, Default, function(statusEffect, duration, damageId, daamgeFrequency, sfxId, sfxDummyPolygonId) {
-    ApplyStatusEffect(statusEffect, duration, damageId, daamgeFrequency, sfxId, sfxDummyPolygonId);
+Event(872, Default, function(statusEffect, duration, damageId, damageFrequency, sfxId, sfxDummyPolygonId) {
+    ApplyStatusEffect(statusEffect, duration, damageId, damageFrequency, sfxId, sfxDummyPolygonId);
 });
 
 Event(930, Default, function(calculationFormula, amount) {

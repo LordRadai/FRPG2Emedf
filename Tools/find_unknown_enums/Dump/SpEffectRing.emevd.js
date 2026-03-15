@@ -72,20 +72,20 @@ Event(40040002, Default, function() {
 
 Event(40050000, Default, function() {
     DisplayIcon(20, StartAndEndConditions.None, 0);
-    IncreaseDefensePower(0, EquipmentAttribute.AllPhysical, 50);
-    ModifyStatusRate(ChrStatusRate.EnemyDamageReduction, 0, 0.9);
+    IncreaseDefensePower(0, EquipmentAttribute.Physical, 50);
+    ModifyStatusRate(ChrStatusRate.EnemyDamageCutRate, 0, 0.9);
 });
 
 Event(40050001, Default, function() {
     DisplayIcon(20, StartAndEndConditions.None, 0);
-    IncreaseDefensePower(0, EquipmentAttribute.AllPhysical, 75);
-    ModifyStatusRate(ChrStatusRate.EnemyDamageReduction, 0, 0.9);
+    IncreaseDefensePower(0, EquipmentAttribute.Physical, 75);
+    ModifyStatusRate(ChrStatusRate.EnemyDamageCutRate, 0, 0.9);
 });
 
 Event(40050002, Default, function() {
     DisplayIcon(20, StartAndEndConditions.None, 0);
-    IncreaseDefensePower(0, EquipmentAttribute.AllPhysical, 100);
-    ModifyStatusRate(ChrStatusRate.EnemyDamageReduction, 0, 0.875);
+    IncreaseDefensePower(0, EquipmentAttribute.Physical, 100);
+    ModifyStatusRate(ChrStatusRate.EnemyDamageCutRate, 0, 0.875);
 });
 
 Event(40060000, Default, function() {
@@ -208,17 +208,17 @@ Event(40150000, Default, function() {
 
 Event(40160000, Default, function() {
     DisplayIcon(40, StartAndEndConditions.None, 0);
-    IncreaseAttackPower(0, EquipmentAttribute.AllPhysical, 20);
+    IncreaseAttackPower(0, EquipmentAttribute.Physical, 20);
 });
 
 Event(40160001, Default, function() {
     DisplayIcon(40, StartAndEndConditions.None, 0);
-    IncreaseAttackPower(0, EquipmentAttribute.AllPhysical, 35);
+    IncreaseAttackPower(0, EquipmentAttribute.Physical, 35);
 });
 
 Event(40160002, Default, function() {
     DisplayIcon(40, StartAndEndConditions.None, 0);
-    IncreaseAttackPower(0, EquipmentAttribute.AllPhysical, 50);
+    IncreaseAttackPower(0, EquipmentAttribute.Physical, 50);
 });
 
 Event(40210000, Default, function() {
@@ -237,14 +237,14 @@ Event(40230000, Default, function() {
 Event(40260000, Default, function() {
     DisplayIcon(60, StartAndEndConditions.RemainingHPPercentage0To100, 30);
     EffectSFX(931, 220, SFXDeletionTiming.EffectTimeExpired, 10, StartAndEndConditions.RemainingHPPercentage0To100, 30);
-    ModifyStatusValue(ChrStatusValue.AttackCorrectionMoribundHPRatio0100, 0, 30);
+    ModifyStatusValue(ChrStatusValue.AttackCorrectionNeardeathHPRatio0100, 0, 30);
     ModifyStatusRate(ChrStatusRate.AttackDamageCorrectionWhenNearDeath, 0, 1.2);
 });
 
 Event(40280000, Default, function() {
     DisplayIcon(60, StartAndEndConditions.RemainingHPPercentage0To100, 30);
     EffectSFX(932, 220, SFXDeletionTiming.EffectTimeExpired, 20, StartAndEndConditions.RemainingHPPercentage0To100, 30);
-    ModifyStatusValue(ChrStatusValue.DamageTakenAndNeardeathHPRatio0100, 0, 30);
+    ModifyStatusValue(ChrStatusValue.DamageTakenNeardeathHPRatio0100, 0, 30);
     ModifyStatusRate(ChrStatusRate.DamageCompensationWhenNearDeath, 0, 0.65);
 });
 
@@ -417,8 +417,8 @@ Event(40440000, Default, function() {
     EffectSFX(938, 3, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     ModifyStatusFlag(ChrStatusFlag.DisableBackstab, 0);
     ModifyStatusFlag(ChrStatusFlag.ReduceBackDamage, 0);
-    ModifyStatusRate(ChrStatusRate.Unknown61, 0, 0.8);
-    ModifyStatusRate(ChrStatusRate.Unknown62, 0, 0.15);
+    ModifyStatusRate(ChrStatusRate.BackDamagePhysicalCutRate, 0, 0.8);
+    ModifyStatusRate(ChrStatusRate.BackDamageElementalCutRate, 0, 0.15);
 });
 
 Event(40460000, Default, function() {
@@ -470,8 +470,8 @@ Event(40540000, Default, function() {
 });
 
 Event(40550000, Default, function() {
-    ModifyStatusValue32(ChrStatusValue32.SpiritMimicry, 0, 2);
-    DrawDisableFullBodySFX(0);
+    ModifyStatusValue32(ChrStatusValue32.PhantomType, 0, 2);
+    DisableFullBodySFX(0);
 });
 
 Event(40610000, Default, function() {
@@ -483,7 +483,7 @@ Event(40620000, Default, function() {
 });
 
 Event(40700000, Default, function() {
-    SummonSearchRequest(ForcedSummonSearchType.CrestOfTheRat);
+    SummonSearchRequest(ForcedSummonSearchType.RatKing);
     IncreaseAttackPower(0, EquipmentAttribute.Poison, 50);
 });
 
@@ -492,7 +492,7 @@ Event(40710000, Default, function() {
 });
 
 Event(40720000, Default, function() {
-    SummonSearchRequest(ForcedSummonSearchType.GuardiansSeal);
+    SummonSearchRequest(ForcedSummonSearchType.BlueSentinel);
 });
 
 Event(40730000, Default, function() {
@@ -550,7 +550,7 @@ Event(40090003, Default, function() {
 
 Event(41000000, Default, function() {
     ModifyStatusValue(ChrStatusValue.Adaptability, 0, 5);
-    ModifyStatusFlag(ChrStatusFlag.Unknown31, 0);
+    ModifyStatusFlag(ChrStatusFlag.EnableSimpletonRing, 0);
 });
 
 Event(41010000, Default, function() {
@@ -564,53 +564,53 @@ Event(41020000, Default, function() {
 Event(41030000, Default, function() {
     DisplayIcon(40, StartAndEndConditions.None, 0);
     EffectSFX(5449, 220, SFXDeletionTiming.EffectTimeExpired, 45, StartAndEndConditions.None, 0);
-    ModifyStatusValue(ChrStatusValue.AntiStabilityModifier, 0, 20);
+    ModifyStatusValue(ChrStatusValue.BlockStaminaDamageBonus, 0, 20);
     ModifyStatusValue(ChrStatusValue.Unknown22, 0, 4);
 });
 
 Event(41040000, Default, function() {
     DisplayIcon(40, StartAndEndConditions.None, 0);
     IncreaseAttackPower(0, EquipmentAttribute.Magic, 30);
-    DecreaseDefensePower(0, EquipmentAttribute.AllPhysical, 80);
+    DecreaseDefensePower(0, EquipmentAttribute.Physical, 80);
 });
 
 Event(41050000, Default, function() {
     DisplayIcon(40, StartAndEndConditions.None, 0);
     IncreaseAttackPower(0, EquipmentAttribute.Lightning, 30);
-    DecreaseDefensePower(0, EquipmentAttribute.AllPhysical, 80);
+    DecreaseDefensePower(0, EquipmentAttribute.Physical, 80);
 });
 
 Event(41060000, Default, function() {
     DisplayIcon(40, StartAndEndConditions.None, 0);
     IncreaseAttackPower(0, EquipmentAttribute.Fire, 30);
-    DecreaseDefensePower(0, EquipmentAttribute.AllPhysical, 80);
+    DecreaseDefensePower(0, EquipmentAttribute.Physical, 80);
 });
 
 Event(41070000, Default, function() {
     DisplayIcon(40, StartAndEndConditions.None, 0);
     IncreaseAttackPower(0, EquipmentAttribute.Dark, 30);
-    DecreaseDefensePower(0, EquipmentAttribute.AllPhysical, 80);
+    DecreaseDefensePower(0, EquipmentAttribute.Physical, 80);
 });
 
 Event(41090000, Default, function() {
-    ModifyStatusRate(ChrStatusRate.ShieldStability, 0, 5);
+    ModifyStatusRate(ChrStatusRate.ShieldStabilityRate, 0, 5);
 });
 
 Event(41100000, Default, function() {
     DisplayIcon(40, StartAndEndConditions.None, 0);
-    ApplyEquipLoadbasedFlatDamageToWeapon(60, 80, 100, 0, 50, 10, 1);
+    AdjustDamageByWeight(60, 80, 100, 0, 50, 10, 1);
 });
 
 Event(41110000, Default, function() {
-    ModifyAttributeByCurrentValue(AttributeType.Vigor, 6, 60, 7, 3);
-    ModifyAttributeByCurrentValue(AttributeType.Endurance, 6, 60, 7, 3);
-    ModifyAttributeByCurrentValue(AttributeType.Vitality, 6, 60, 7, 3);
+    LevelStatusCorrection(AttributeType.Vigor, 6, 60, 7, 3);
+    LevelStatusCorrection(AttributeType.Endurance, 6, 60, 7, 3);
+    LevelStatusCorrection(AttributeType.Vitality, 6, 60, 7, 3);
     ModifyStatusRate(ChrStatusRate.DamageCorrectionWhenReceivingDamage, 0, 1.085);
 });
 
 Event(41120000, Default, function() {
     ModifyStatusFlag(ChrStatusFlag.DisableChrPhantomColor, 0);
-    DrawDisableFullBodySFX(0);
+    DisableFullBodySFX(0);
 });
 
 Event(41130000, Default, function() {

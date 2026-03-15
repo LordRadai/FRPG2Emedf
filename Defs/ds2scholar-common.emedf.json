@@ -3661,7 +3661,22 @@
         {
           "name": "Disable Full Body SFX",
           "index": 5,
-          "args": []
+          "args": [
+            {
+              "name": "Unusued",
+              "type": 5,
+              "enum_name": null,
+              "default": 0,
+              "min": 0,
+              "max": 0,
+              "increment": 0,
+              "format_string": "%d",
+              "unk1": 0,
+              "unk2": 0,
+              "unk3": 0,
+              "unk4": 0
+            }
+          ]
         },
         {
           "name": "Add Spell Deflect Chance",
@@ -3723,6 +3738,20 @@
               "min": 0,
               "max": 1000000000,
               "increment": 1,
+              "format_string": "%d",
+              "unk1": 0,
+              "unk2": 0,
+              "unk3": 0,
+              "unk4": 0
+            },
+            {
+              "name": "Unused",
+              "type": 5,
+              "enum_name": null,
+              "default": 0,
+              "min": 0,
+              "max": 0,
+              "increment": 0,
               "format_string": "%d",
               "unk1": 0,
               "unk2": 0,

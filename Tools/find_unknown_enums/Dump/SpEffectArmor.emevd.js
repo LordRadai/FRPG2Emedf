@@ -89,7 +89,7 @@ Event(21470103, Default, function() {
 });
 
 Event(21470110, Default, function() {
-    CreateBullet(50000010, 50000010, BulletAttackType.None, 1);
+    CreateBullet(50000010, 50000010, BulletAttackPowerType.None, 1);
 });
 
 Event(21470120, Default, function() {
@@ -269,7 +269,7 @@ Event(25100100, Default, function() {
 Event(25130100, Default, function() {
     ModifyStatusValue(ChrStatusValue.Intelligence, 0, 3);
     ModifyStatusValue(ChrStatusValue.Faith, 0, 3);
-    ApplySpEffectIfEventFlagSet(100730, 25130110, 0);
+    EventFlagEffect(100730, 25130110, 0);
 });
 
 Event(25130110, Default, function() {
@@ -344,7 +344,7 @@ Event(21610103, Default, function() {
 
 Event(21630100, Default, function() {
     GenerateDamage(51000000, 120, -1);
-    ApplySpEffectIfEventFlagSet(100730, 21630105, 0);
+    EventFlagEffect(100730, 21630105, 0);
 });
 
 Event(21630105, Default, function() {
@@ -363,7 +363,7 @@ Event(21640100, Default, function() {
     DisplayIcon(120, StartAndEndConditions.None, 0);
     EffectSFX(935, 249, SFXDeletionTiming.EffectTimeExpired, 40, StartAndEndConditions.None, 0);
     TimeHPRecovery(1, 850, 1, 1069547520, 0);
-    ApplySpEffectIfEventFlagSet(100730, 21640110, 0);
+    EventFlagEffect(100730, 21640110, 0);
 });
 
 Event(21640110, Default, function() {
@@ -375,21 +375,21 @@ Event(21640110, Default, function() {
 });
 
 Event(21650100, Default, function() {
-    ModifyAttributeByCurrentValue(AttributeType.Vitality, 0, 99, -1, -1);
-    ModifyAttributeByCurrentValue(AttributeType.Vigor, 0, 99, -1, -1);
+    LevelStatusCorrection(AttributeType.Vitality, 0, 99, -1, -1);
+    LevelStatusCorrection(AttributeType.Vigor, 0, 99, -1, -1);
     ModifyStatusValue(ChrStatusValue.Endurance, 0, 1);
     ModifyStatusValue(ChrStatusValue.Strength, 0, 1);
     ModifyStatusValue(ChrStatusValue.Dexterity, 0, 1);
     ModifyStatusValue(ChrStatusValue.Intelligence, 0, 1);
     ModifyStatusValue(ChrStatusValue.Faith, 0, 1);
-    ApplySpEffectIfEventFlagSet(100730, 21650110, 0);
+    EventFlagEffect(100730, 21650110, 0);
 });
 
 Event(21650110, Default, function() {
     ModifyStatusFlag(ChrStatusFlag.DisableHollowing, 0);
     ModifyStatusFlag(ChrStatusFlag.CurseImmunity, 0);
-    ModifyAttributeByCurrentValue(AttributeType.Vitality, 0, 99, -1, -1);
-    ModifyAttributeByCurrentValue(AttributeType.Vigor, 0, 99, -1, -1);
+    LevelStatusCorrection(AttributeType.Vitality, 0, 99, -1, -1);
+    LevelStatusCorrection(AttributeType.Vigor, 0, 99, -1, -1);
     ModifyStatusValue(ChrStatusValue.Endurance, 0, 1);
     ModifyStatusValue(ChrStatusValue.Strength, 0, 1);
     ModifyStatusValue(ChrStatusValue.Dexterity, 0, 1);
@@ -399,7 +399,7 @@ Event(21650110, Default, function() {
 
 Event(21660100, Default, function() {
     DisplayIcon(160, StartAndEndConditions.None, 0);
-    ModifyStatusFlag(ChrStatusFlag.Unknown29, 0);
+    ModifyStatusFlag(ChrStatusFlag.DisableHeadshotDamage, 0);
     ModifyStatusRate(ChrStatusRate.SpellDamageMultiplierMiracle, 0, 1.015);
     ModifyStatusRate(ChrStatusRate.SpellDamageMultiplierDarkMiracle, 0, 1.015);
 });
@@ -410,7 +410,7 @@ Event(21670100, Default, function() {
 });
 
 Event(21680100, Default, function() {
-    ModifyStatusValue32(ChrStatusValue32.WetnessMimicry, 0, 10);
+    ModifyStatusValue32(ChrStatusValue32.WetType, 0, 10);
 });
 
 Event(21690103, Default, function() {
@@ -446,19 +446,19 @@ Event(26700110, Default, function() {
 });
 
 Event(26880100, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26880200, 26880210);
+    GenderEffect(26880200, 26880210);
 });
 
 Event(26880101, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26880201, 26880211);
+    GenderEffect(26880201, 26880211);
 });
 
 Event(26880102, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26880202, 26880212);
+    GenderEffect(26880202, 26880212);
 });
 
 Event(26880103, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26880203, 26880213);
+    GenderEffect(26880203, 26880213);
 });
 
 Event(26880210, Default, function() {
@@ -482,19 +482,19 @@ Event(26880213, Default, function() {
 });
 
 Event(26890100, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26890200, 26890210);
+    GenderEffect(26890200, 26890210);
 });
 
 Event(26890101, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26890201, 26890211);
+    GenderEffect(26890201, 26890211);
 });
 
 Event(26890102, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26890202, 26890212);
+    GenderEffect(26890202, 26890212);
 });
 
 Event(26890103, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26890203, 26890213);
+    GenderEffect(26890203, 26890213);
 });
 
 Event(26890210, Default, function() {
@@ -518,19 +518,19 @@ Event(26890213, Default, function() {
 });
 
 Event(26900100, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26900200, 26900210);
+    GenderEffect(26900200, 26900210);
 });
 
 Event(26900101, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26900201, 26900211);
+    GenderEffect(26900201, 26900211);
 });
 
 Event(26900102, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26900202, 26900212);
+    GenderEffect(26900202, 26900212);
 });
 
 Event(26900103, Default, function() {
-    ApplySpEffectOnKillEnemyGender(26900203, 26900213);
+    GenderEffect(26900203, 26900213);
 });
 
 Event(26900210, Default, function() {
@@ -555,22 +555,22 @@ Event(26900213, Default, function() {
 
 Event(22480100, Default, function() {
     ModifyStatusValue(ChrStatusValue.Faith, 0, 2);
-    ModifyAttributeByCurrentValue(AttributeType.Intelligence, 0, 99, -1, -1);
+    LevelStatusCorrection(AttributeType.Intelligence, 0, 99, -1, -1);
 });
 
 Event(22480101, Default, function() {
     ModifyStatusValue(ChrStatusValue.Adaptability, 0, 2);
-    ModifyAttributeByCurrentValue(AttributeType.Intelligence, 0, 99, -1, -1);
+    LevelStatusCorrection(AttributeType.Intelligence, 0, 99, -1, -1);
 });
 
 Event(22480102, Default, function() {
     ModifyStatusValue(ChrStatusValue.Adaptability, 0, 2);
-    ModifyAttributeByCurrentValue(AttributeType.Intelligence, 0, 99, -1, -1);
+    LevelStatusCorrection(AttributeType.Intelligence, 0, 99, -1, -1);
 });
 
 Event(22480103, Default, function() {
     ModifyStatusValue(ChrStatusValue.Adaptability, 0, 2);
-    ModifyAttributeByCurrentValue(AttributeType.Intelligence, 0, 99, -1, -1);
+    LevelStatusCorrection(AttributeType.Intelligence, 0, 99, -1, -1);
 });
 
 Event(23070100, Default, function() {

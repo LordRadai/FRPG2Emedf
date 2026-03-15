@@ -154,7 +154,7 @@ Event(140001000, Default, function() {
     ModifyStatusValue32(ChrStatusValue32.EquipmentDurabilityValueChangeRightHandCurrentWeapon, 0, -7);
     ModifyStatusValue32(ChrStatusValue32.EquipmentDurabilityValueChangeAllEquipmentArmor, 0, -7);
     ModifyStatusValue32(ChrStatusValue32.EquipmentDurabilityValueChangeAllEquipmentRings, 0, -7);
-    CreateBullet(310070030, 310070030, BulletAttackType.None, 1);
+    CreateBullet(310070030, 310070030, BulletAttackPowerType.None, 1);
 });
 
 Event(140001010, Default, function() {
@@ -217,55 +217,55 @@ Event(150300000, Default, function() {
 
 Event(160000000, Default, function() {
     EffectSFX(290, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    SpellParrySetting(0.4, SpellParryType.MagicPower, 5451);
-    SpellParrySetting(0.4, SpellParryType.Thunder, 5451);
-    SpellParrySetting(0.4, SpellParryType.Flame, 5451);
-    SpellParrySetting(0.4, SpellParryType.Darkness, 5451);
+    SpellParrySetting(0.4, SpellParryType.Magic, 5451);
+    SpellParrySetting(0.4, SpellParryType.Lightning, 5451);
+    SpellParrySetting(0.4, SpellParryType.Fire, 5451);
+    SpellParrySetting(0.4, SpellParryType.Dark, 5451);
 });
 
 Event(160000100, Default, function() {
     EffectSFX(290, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    SpellParrySetting(0.3, SpellParryType.MagicPower, 5451);
-    SpellParrySetting(0.3, SpellParryType.Thunder, 5451);
-    SpellParrySetting(0.3, SpellParryType.Flame, 5451);
-    SpellParrySetting(0.3, SpellParryType.Darkness, 5451);
+    SpellParrySetting(0.3, SpellParryType.Magic, 5451);
+    SpellParrySetting(0.3, SpellParryType.Lightning, 5451);
+    SpellParrySetting(0.3, SpellParryType.Fire, 5451);
+    SpellParrySetting(0.3, SpellParryType.Dark, 5451);
 });
 
 Event(160000010, Default, function() {
     EffectSFX(290, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    SpellParrySetting(0.55, SpellParryType.MagicPower, 5451);
-    SpellParrySetting(0.55, SpellParryType.Thunder, 5451);
-    SpellParrySetting(0.55, SpellParryType.Flame, 5451);
-    SpellParrySetting(0.55, SpellParryType.Darkness, 5451);
+    SpellParrySetting(0.55, SpellParryType.Magic, 5451);
+    SpellParrySetting(0.55, SpellParryType.Lightning, 5451);
+    SpellParrySetting(0.55, SpellParryType.Fire, 5451);
+    SpellParrySetting(0.55, SpellParryType.Dark, 5451);
 });
 
 Event(160000110, Default, function() {
     EffectSFX(290, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    SpellParrySetting(0.3, SpellParryType.MagicPower, 5451);
-    SpellParrySetting(0.3, SpellParryType.Thunder, 5451);
-    SpellParrySetting(0.3, SpellParryType.Flame, 5451);
-    SpellParrySetting(0.3, SpellParryType.Darkness, 5451);
+    SpellParrySetting(0.3, SpellParryType.Magic, 5451);
+    SpellParrySetting(0.3, SpellParryType.Lightning, 5451);
+    SpellParrySetting(0.3, SpellParryType.Fire, 5451);
+    SpellParrySetting(0.3, SpellParryType.Dark, 5451);
 });
 
 Event(160001010, Default, function() {
     EffectSFX(290, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    SpellParrySetting(0.4, SpellParryType.MagicPower, 5451);
-    SpellParrySetting(0.4, SpellParryType.Thunder, 5451);
-    SpellParrySetting(0.4, SpellParryType.Flame, 5451);
-    SpellParrySetting(0.4, SpellParryType.Darkness, 5451);
+    SpellParrySetting(0.4, SpellParryType.Magic, 5451);
+    SpellParrySetting(0.4, SpellParryType.Lightning, 5451);
+    SpellParrySetting(0.4, SpellParryType.Fire, 5451);
+    SpellParrySetting(0.4, SpellParryType.Dark, 5451);
 });
 
 Event(160001110, Default, function() {
     EffectSFX(290, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    SpellParrySetting(0.3, SpellParryType.MagicPower, 5451);
-    SpellParrySetting(0.3, SpellParryType.Thunder, 5451);
-    SpellParrySetting(0.3, SpellParryType.Flame, 5451);
-    SpellParrySetting(0.3, SpellParryType.Darkness, 5451);
+    SpellParrySetting(0.3, SpellParryType.Magic, 5451);
+    SpellParrySetting(0.3, SpellParryType.Lightning, 5451);
+    SpellParrySetting(0.3, SpellParryType.Fire, 5451);
+    SpellParrySetting(0.3, SpellParryType.Dark, 5451);
 });
 
 Event(170000000, Default, function() {
     InfiniteEffectTime();
-    ModifyStatusFlag(ChrStatusFlag.Unknown61, 1);
+    ModifyStatusFlag(ChrStatusFlag.EnableSensorInvisibility, 1);
 });
 
 Event(170001000, Default, function() {

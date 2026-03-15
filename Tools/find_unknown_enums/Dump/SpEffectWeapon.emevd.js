@@ -20,7 +20,7 @@ Event(1720010, Default, function() {
 });
 
 Event(1900000, Default, function() {
-    OwnedSoulAttackPowerMultiplier(0, 10000, 1000000, 0.85, 1.3, 0);
+    SoulAttackRate(0, 10000, 1000000, 0.85, 1.3, 0);
 });
 
 Event(1960000, Default, function() {
@@ -51,7 +51,7 @@ Event(2500000, Default, function() {
     ModifyStatusValue(ChrStatusValue.Vitality, 0, 1);
     ModifyStatusValue(ChrStatusValue.Endurance, 0, 1);
     ModifyStatusValue(ChrStatusValue.Adaptability, 0, 2);
-    ModifyAttributeByCurrentValue(AttributeType.Dexterity, 0, 99, -1, -1);
+    LevelStatusCorrection(AttributeType.Dexterity, 0, 99, -1, -1);
 });
 
 Event(2680000, Default, function() {
@@ -61,18 +61,18 @@ Event(2680000, Default, function() {
 });
 
 Event(3400010, Default, function() {
-    CreateBullet(10070, 10070, BulletAttackType.PhysicsMuscleStrength, 0.7);
-    CreateBullet(10071, 10071, BulletAttackType.None, 1);
+    CreateBullet(10070, 10070, BulletAttackPowerType.Strength, 0.7);
+    CreateBullet(10071, 10071, BulletAttackPowerType.None, 1);
     VirtualCommand(0.5);
 });
 
 Event(3440000, Default, function() {
     ModifyStatusValue(ChrStatusValue.Dexterity, 0, 5);
-    ModifyAttributeByCurrentValue(AttributeType.Adaptability, 0, 99, -3, -3);
+    LevelStatusCorrection(AttributeType.Adaptability, 0, 99, -3, -3);
 });
 
 Event(3810000, Default, function() {
-    ApplySpecialScalingToWeapon(SpecialScalingType.Hollowing, 0, 10, 1, 0.1, 0);
+    SpecialAttackRate(SpecialAtkRateType.HollowCount, 0, 10, 1, 0.1, 0);
 });
 
 Event(4110000, Default, function() {
@@ -141,7 +141,7 @@ Event(5295000, Default, function() {
 });
 
 Event(5295010, Default, function() {
-    ApplySpecialScalingToWeapon(SpecialScalingType.Sin, 0, 30, 1, 0, 0);
+    SpecialAttackRate(SpecialAtkRateType.Sin, 0, 30, 1, 0, 0);
 });
 
 Event(5400000, Default, function() {
@@ -152,7 +152,7 @@ Event(5400000, Default, function() {
 Event(5410000, Default, function() {
     WeaponSFX(5424, 0.1, 0, 1, 0, 0);
     ModifyStatusFlag(ChrStatusFlag.FlameWeapon, 0);
-    ApplySpecialScalingToWeapon(SpecialScalingType.Hollowing, 0, 10, 0.1, 1, 0);
+    SpecialAttackRate(SpecialAtkRateType.HollowCount, 0, 10, 0.1, 1, 0);
 });
 
 Event(6000000, Default, function() {
@@ -236,11 +236,11 @@ Event(1790015, Default, function() {
 });
 
 Event(1790020, Default, function() {
-    CreateBullet(20088921, 20088921, BulletAttackType.None, 0);
+    CreateBullet(20088921, 20088921, BulletAttackPowerType.None, 0);
     EffectSFX(5317, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     DisplayIcon(40, StartAndEndConditions.None, 0);
     WeaponSFX(5441, 10, 0, 1, 0, 0);
-    ApplySpecialScalingToWeapon(SpecialScalingType.Hollowing, 0, 0, 1.6, 1.6, 30);
+    SpecialAttackRate(SpecialAtkRateType.HollowCount, 0, 0, 1.6, 1.6, 30);
 });
 
 Event(1830000, Default, function() {
@@ -274,7 +274,7 @@ Event(3530000, Default, function() {
 });
 
 Event(3530010, Default, function() {
-    CreateBullet(20088700, 20088700, BulletAttackType.PhysicsMuscleStrength, 1.8);
+    CreateBullet(20088700, 20088700, BulletAttackPowerType.Strength, 1.8);
     VirtualCommand(0.5);
     ModifyStatusValue32(ChrStatusValue32.EquipmentDurabilityValueChangeLeftHandCurrentWeapon, 0, -5);
     ModifyStatusValue32(ChrStatusValue32.EquipmentDurabilityValueChangeRightHandCurrentWeapon, 0, -5);
@@ -288,13 +288,13 @@ Event(3930000, Default, function() {
 });
 
 Event(4120000, Default, function() {
-    ModifyAttributeByCurrentValue(AttributeType.Faith, 6, 60, 8, 2);
+    LevelStatusCorrection(AttributeType.Faith, 6, 60, 8, 2);
 });
 
 Event(5050000, Default, function() {
     EffectSFX(5465, 220, SFXDeletionTiming.EffectTimeExpired, 30, 2, 2);
-    ApplyCycleScalingToWeapon(2, 10, 30, 200, 2);
-    ApplyCycleScalingToWeapon(2, 10, 5, 100, 1);
+    AdjustDamageByRound(2, 10, 30, 200, TargetCharacter.Enemy);
+    AdjustDamageByRound(2, 10, 5, 100, TargetCharacter.Player);
 });
 
 Event(5255000, Default, function() {
@@ -327,11 +327,11 @@ Event(11295000, Default, function() {
 });
 
 Event(1997000, Default, function() {
-    ApplySpecialScalingToWeapon(SpecialScalingType.Hollowing, 0, 10, 0.1, 1, 0);
+    SpecialAttackRate(SpecialAtkRateType.HollowCount, 0, 10, 0.1, 1, 0);
 });
 
 Event(3080000, Default, function() {
-    ApplySpecialScalingToWeapon(SpecialScalingType.Hollowing, 0, 10, 0.1, 1, 0);
+    SpecialAttackRate(SpecialAtkRateType.HollowCount, 0, 10, 0.1, 1, 0);
 });
 
 

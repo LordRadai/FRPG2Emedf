@@ -335,18 +335,18 @@ Event(60370005, Default, function() {
 });
 
 Event(60375000, Default, function() {
-    UnknownCommand100020(60375001);
+    NPCMimicryLottery(60375001);
 });
 
 Event(60375001, Default, function() {
     InfiniteEffectTime();
-    UnknownCommand100021(0, 0, 878);
+    NPCMimicry(0, 0, 878);
 });
 
 Event(60405000, Default, function() {
     FullBodySFX(500010, SFXDeletionTiming.EffectTimeExpired);
     VirtualCommand(1);
-    CreateBullet(60405000, 60405000, BulletAttackType.None, 1);
+    CreateBullet(60405000, 60405000, BulletAttackPowerType.None, 1);
 });
 
 Event(60405001, Default, function() {
@@ -354,15 +354,15 @@ Event(60405001, Default, function() {
 });
 
 Event(60405010, Default, function() {
-    CreateBullet(60405030, 60405030, BulletAttackType.None, 1);
-    CreateBullet(60405010, 60405010, BulletAttackType.None, 1);
-    CreateBullet(60405011, 60405011, BulletAttackType.None, 1);
+    CreateBullet(60405030, 60405030, BulletAttackPowerType.None, 1);
+    CreateBullet(60405010, 60405010, BulletAttackPowerType.None, 1);
+    CreateBullet(60405011, 60405011, BulletAttackPowerType.None, 1);
 });
 
 Event(60405020, Default, function() {
-    CreateBullet(60405030, 60405030, BulletAttackType.None, 1);
-    CreateBullet(60405020, 60405020, BulletAttackType.None, 1);
-    CreateBullet(60405011, 60405011, BulletAttackType.None, 1);
+    CreateBullet(60405030, 60405030, BulletAttackPowerType.None, 1);
+    CreateBullet(60405020, 60405020, BulletAttackPowerType.None, 1);
+    CreateBullet(60405011, 60405011, BulletAttackPowerType.None, 1);
 });
 
 Event(60405030, Default, function() {
@@ -373,7 +373,7 @@ Event(60405030, Default, function() {
 Event(60406000, Default, function() {
     FullBodySFX(500110, SFXDeletionTiming.EffectTimeExpired);
     VirtualCommand(1);
-    CreateBullet(60406000, 60406000, BulletAttackType.None, 1);
+    CreateBullet(60406000, 60406000, BulletAttackPowerType.None, 1);
 });
 
 Event(60406001, Default, function() {
@@ -381,8 +381,8 @@ Event(60406001, Default, function() {
 });
 
 Event(60406010, Default, function() {
-    CreateBullet(60406010, 60406010, BulletAttackType.None, 1);
-    CreateBullet(60406011, 60406011, BulletAttackType.None, 1);
+    CreateBullet(60406010, 60406010, BulletAttackPowerType.None, 1);
+    CreateBullet(60406011, 60406011, BulletAttackPowerType.None, 1);
 });
 
 Event(60406020, Default, function() {
@@ -402,7 +402,7 @@ Event(60410000, Default, function() {
 });
 
 Event(60430000, Default, function() {
-    CreateBullet(60430000, 60430000, BulletAttackType.None, 1);
+    CreateBullet(60430000, 60430000, BulletAttackPowerType.None, 1);
 });
 
 Event(60450000, Default, function() {
@@ -410,19 +410,19 @@ Event(60450000, Default, function() {
 });
 
 Event(60470000, Default, function() {
-    CreateBullet(60470000, 60470000, BulletAttackType.None, 1);
+    CreateBullet(60470000, 60470000, BulletAttackPowerType.None, 1);
 });
 
 Event(60480000, Default, function() {
-    CreateBullet(60480000, 60480000, BulletAttackType.None, 1);
+    CreateBullet(60480000, 60480000, BulletAttackPowerType.None, 1);
 });
 
 Event(60490000, Default, function() {
-    CreateBullet(60490000, 60490000, BulletAttackType.None, 1);
+    CreateBullet(60490000, 60490000, BulletAttackPowerType.None, 1);
 });
 
 Event(60500000, Default, function() {
-    CreateBullet(60500000, 60500000, BulletAttackType.None, 1);
+    CreateBullet(60500000, 60500000, BulletAttackPowerType.None, 1);
 });
 
 Event(60510000, Default, function() {
@@ -430,11 +430,11 @@ Event(60510000, Default, function() {
 });
 
 Event(60530000, Default, function() {
-    CreateBullet(60530000, 60530000, BulletAttackType.None, 1);
+    CreateBullet(60530000, 60530000, BulletAttackPowerType.None, 1);
 });
 
 Event(60531000, Default, function() {
-    CreateBullet(60531000, 60531000, BulletAttackType.None, 1);
+    CreateBullet(60531000, 60531000, BulletAttackPowerType.None, 1);
 });
 
 Event(60531010, Default, function() {
@@ -443,44 +443,44 @@ Event(60531010, Default, function() {
 });
 
 Event(60540000, Default, function() {
-    CreateBullet(60540000, 60540000, BulletAttackType.PhysicsSkill, 0.26);
+    CreateBullet(60540000, 60540000, BulletAttackPowerType.Dexterity, 0.26);
 });
 
 Event(60550000, Default, function() {
-    CreateBullet(60550000, 60550000, BulletAttackType.MagicPower, 0.65);
+    CreateBullet(60550000, 60550000, BulletAttackPowerType.MagicPower, 0.65);
 });
 
 Event(60560000, Default, function() {
-    CreateBullet(60560000, 60560000, BulletAttackType.Thunder, 0.65);
+    CreateBullet(60560000, 60560000, BulletAttackPowerType.Lightning, 0.65);
 });
 
 Event(60570000, Default, function() {
-    CreateBullet(60570000, 60570000, BulletAttackType.Flame, 0.65);
+    CreateBullet(60570000, 60570000, BulletAttackPowerType.Flame, 0.65);
 });
 
 Event(60575000, Default, function() {
-    CreateBullet(60575000, 60575000, BulletAttackType.Flame, 0.75);
+    CreateBullet(60575000, 60575000, BulletAttackPowerType.Flame, 0.75);
 });
 
 Event(60580000, Default, function() {
-    CreateBullet(60580000, 60580000, BulletAttackType.Darkness, 0.65);
+    CreateBullet(60580000, 60580000, BulletAttackPowerType.Dark, 0.65);
 });
 
 Event(60590000, Default, function() {
-    CreateBullet(60590000, 60590000, BulletAttackType.PhysicsSkill, 0.26);
+    CreateBullet(60590000, 60590000, BulletAttackPowerType.Dexterity, 0.26);
 });
 
 Event(60595000, Default, function() {
-    CreateBullet(60595000, 60595000, BulletAttackType.None, 1);
-    CreateBullet(60595010, 60595010, BulletAttackType.Poison, 0.65);
+    CreateBullet(60595000, 60595000, BulletAttackPowerType.None, 1);
+    CreateBullet(60595010, 60595010, BulletAttackPowerType.Poison, 0.65);
 });
 
 Event(60600000, Default, function() {
-    CreateBullet(60600000, 60600000, BulletAttackType.PhysicsSkill, 0.26);
+    CreateBullet(60600000, 60600000, BulletAttackPowerType.Dexterity, 0.26);
 });
 
 Event(60610000, Default, function() {
-    CreateBullet(60610000, 60610000, BulletAttackType.None, 1);
+    CreateBullet(60610000, 60610000, BulletAttackPowerType.None, 1);
 });
 
 Event(60610010, Default, function() {
@@ -490,7 +490,7 @@ Event(60610010, Default, function() {
 });
 
 Event(60620000, Default, function() {
-    CreateBullet(60620000, 60620000, BulletAttackType.Thunder, 1);
+    CreateBullet(60620000, 60620000, BulletAttackPowerType.Lightning, 1);
 });
 
 Event(60625000, Default, function() {
@@ -804,45 +804,45 @@ Event(60238000, Default, function() {
 Event(60239000, Default, function() {
     EffectSFX(969, 20, SFXDeletionTiming.Invalid, 0, StartAndEndConditions.None, 0);
     EffectSFX(970, 249, SFXDeletionTiming.EffectTimeExpired, 7, StartAndEndConditions.None, 0);
-    ModifyStatusRate(ChrStatusRate.EnemyDamage, 120, 1.2);
-    ModifyStatusRate(ChrStatusRate.EnemyDamageReduction, 120, 0.8);
+    ModifyStatusRate(ChrStatusRate.EnemyDamageMultiplier, 120, 1.2);
+    ModifyStatusRate(ChrStatusRate.EnemyDamageCutRate, 120, 0.8);
 });
 
 Event(65240000, Default, function() {
     WeaponSFX(901, 0.1, 0, 1, 0, 0);
     EffectSFX(955, 20, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    IncreaseAttackUnknown(90, EquipmentAttribute.Magic, 100);
+    IncreaseAttackPowerEnemy(90, EquipmentAttribute.Magic, 100);
 });
 
 Event(65250000, Default, function() {
     WeaponSFX(909, 0.1, 0, 1, 0, 0);
     EffectSFX(956, 20, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    IncreaseAttackUnknown(90, EquipmentAttribute.Lightning, 100);
+    IncreaseAttackPowerEnemy(90, EquipmentAttribute.Lightning, 100);
 });
 
 Event(65260000, Default, function() {
     WeaponSFX(903, 0.1, 0, 1, 0, 0);
     EffectSFX(957, 20, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     ModifyStatusFlag(ChrStatusFlag.FlameWeapon, 90);
-    IncreaseAttackUnknown(90, EquipmentAttribute.Fire, 100);
+    IncreaseAttackPowerEnemy(90, EquipmentAttribute.Fire, 100);
 });
 
 Event(65270000, Default, function() {
     WeaponSFX(905, 0.1, 0, 1, 0, 0);
     EffectSFX(958, 20, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    IncreaseAttackUnknown(90, EquipmentAttribute.Dark, 100);
+    IncreaseAttackPowerEnemy(90, EquipmentAttribute.Dark, 100);
 });
 
 Event(65280000, Default, function() {
     WeaponSFX(907, 0.1, 0, 1, 0, 0);
     EffectSFX(959, 20, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    IncreaseAttackUnknown(90, EquipmentAttribute.Poison, 40);
+    IncreaseAttackPowerEnemy(90, EquipmentAttribute.Poison, 40);
 });
 
 Event(65290000, Default, function() {
     WeaponSFX(921, 0.1, 0, 1, 0, 0);
     EffectSFX(960, 20, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    IncreaseAttackUnknown(90, EquipmentAttribute.Bleed, 40);
+    IncreaseAttackPowerEnemy(90, EquipmentAttribute.Bleed, 40);
 });
 
 

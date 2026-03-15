@@ -38,7 +38,7 @@ Event(900301, Default, function() {
 Event(900400, Default, function() {
     EffectSFX(653, 249, SFXDeletionTiming.Invalid, 0, StartAndEndConditions.None, 0);
     AbnormalStatusChange(1, 872, 3, 1073741824, 0, 0, 0, 0);
-    ModifyStatusValue(ChrStatusValue.DeadPersonCountAddition, 0, 1);
+    ModifyStatusValue(ChrStatusValue.DeadCountAddition, 0, 1);
 });
 
 Event(900500, Default, function() {
@@ -80,7 +80,7 @@ Event(901100, Default, function() {
 
 Event(901110, Default, function() {
     ModifyStatusValue(ChrStatusValue.MaterialReplacement, 3600, 19);
-    ModifyStatusValue32(ChrStatusValue32.WetnessMimicry, 3600, 6);
+    ModifyStatusValue32(ChrStatusValue32.WetType, 3600, 6);
 });
 
 Event(902000, Default, function() {

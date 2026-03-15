@@ -9,6 +9,5 @@ Events that need to be revised are:
 
 Enums that need to be revised are:
 * StatusEffectType
-* ChrStatusValue32
 * ChrStatusFlag
 * ChrStatusValue

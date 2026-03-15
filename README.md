@@ -7,5 +7,5 @@ Enums that need to be revised are:
 ```
 ChrStatusValue
   Unknown22:
-    * Event 41030000 (in SpEffectRing.emevd.js)
+    - Event 41030000 (in SpEffectRing.emevd.js)
 ```

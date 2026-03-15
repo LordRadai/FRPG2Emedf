@@ -1940,7 +1940,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument1",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -1989,7 +1989,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -2124,7 +2124,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -3456,7 +3456,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -4063,7 +4063,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -4098,7 +4098,7 @@
               "unk4": 0
             },
             {
-              "name": "Argument",
+              "name": "Arguments",
               "type": 2,
               "enum_name": null,
               "default": 0,

@@ -4909,7 +4909,7 @@
     {
       "name": "DamageTypeTrigger",
       "values": {
-        "0": "None",
+        "0": "Any",
         "1": "Physical",
         "2": "Magic",
         "3": "Lightning",

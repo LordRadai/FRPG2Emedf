@@ -1475,9 +1475,9 @@
           "index": 0,
           "args": [
             {
-              "name": "Scale Type",
+              "name": "Target",
               "type": 0,
-              "enum_name": "SpEffectScaleType",
+              "enum_name": "EffectCorrectionTarget",
               "default": 0,
               "min": 0,
               "max": 0,
@@ -4416,7 +4416,7 @@
               "unk4": 0
             },
             {
-              "name": "Daamge Frequency",
+              "name": "Damage Frequency",
               "type": 6,
               "enum_name": null,
               "default": 0,
@@ -4555,7 +4555,7 @@
         "12": "Intelligence",
         "13": "Faith",
         "14": "Adaptability",
-        "17": "Dead Person Count Addition",
+        "17": "Dead Count Addition",
         "18": "HP On Kill",
         "19": "Material Replacement",
         "20": "Attunement Slots",
@@ -4576,11 +4576,11 @@
         "15": "Equipment Durability Value Change [All Equipped Weapons]",
         "16": "Equipment Durability Value Change [All Equipment Armor]",
         "17": "Equipment Durability Value Change [All Equipment Rings]",
-        "18": "Spirit Mimicry",
+        "18": "Phantom Type",
         "19": "Player Light Switching",
         "20": "Field Of View Switching",
-        "21": "Wetness Mimicry",
-        "22": "SFXID When HP Recovers When Defeated",
+        "21": "Wet Type",
+        "22": "SFX ID When HP Recovers When Defeated",
         "23": "SFX Dummy Poly ID When Recovering HP When Defeated",
         "25": "Npc Equip Weight",
         "28": "Npc Equipment Durability Value Change [Left Hand Current Weapon]",
@@ -4736,7 +4736,7 @@
       }
     },
     {
-      "name": "SpEffectScaleType",
+      "name": "EffectCorrectionTarget",
       "values": {
         "0": "Duration",
         "1": "Value"
@@ -4752,7 +4752,7 @@
     {
       "name": "EquipmentAttribute",
       "values": {
-        "0": "All Physical",
+        "0": "Physical",
         "1": "Magic",
         "2": "Lightning",
         "3": "Fire",
@@ -4785,7 +4785,7 @@
       "values": {
         "0": "Guardian's Seal",
         "1": "Crest Of The Rat",
-        "2": "Bell Keeper"
+        "2": "Bell Keeper's Seal"
       }
     },
     {

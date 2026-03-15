@@ -3,7 +3,6 @@ UNMAPPED ENUM REPORT
 FOLDER: F:\GitHub\DS2SEmevdef\Dump
 ============================================================
 
-
 ## ChrStatusFlag
   > Unknown49:
     - Event 96570000 (in SpEffectEnemy.emevd.js)

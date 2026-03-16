@@ -4917,38 +4917,5 @@
         "5": "Dark"
       }
     }
-  ],
-  "darkscript": {
-    "aliases": {
-      "UnknownCommand10004004": "100040[04]",
-      "UnknownCommand10009006": "100090[06]",
-      "UnknownCommand10011002": "100110[02]",
-      "UnknownCommand10011003": "100110[03]",
-      "UnknownCommand10013002": "100130[02]",
-      "UnknownCommand10013004": "100130[04]",
-      "UnknownCommand10013005": "100130[05]"
-    },
-    "enum_aliases": {
-      "AdditiveStatType.CurrentHP": 18,
-      "MultiplicativeStatType.Unknown5": 5,
-      "MultiplicativeStatType.OutgoingDamageRateII": 58,
-      "MultiplicativeStatType.IncomingDamageRateII": 59,
-      "StateInfoType.Unknown1": 1,
-      "StateInfoType.Unknown2": 2,
-      "StateInfoType.Unknown3": 3,
-      "StateInfoType.Unknown10": 10,
-      "StateInfoType.Unknown17": 17,
-      "StateInfoType.Unknown18": 18,
-      "StateInfoType.Unknown25": 25,
-      "StateInfoType.Unknown27": 27,
-      "StateInfoType.Unknown55": 55,
-      "StateInfoType.Unknown57": 57,
-      "StateInfoType.Unknown59": 59,
-      "StateInfoType.Unknown60": 60,
-      "PlayerPropertyType.Unknown18": 18,
-      "PlayerPropertyType.Unknown19": 19,
-      "PlayerPropertyType.Unknown22": 22,
-      "PlayerPropertyType.Unknown23": 23
-    }
-  }
+  ]
 }

@@ -454,7 +454,7 @@
           ]
         },
         {
-          "name": "Play SE When Enemies Nearby Player",
+          "name": "Sound When Enemies Nearby",
           "index": 7,
           "args": [
             {
@@ -500,7 +500,7 @@
               "unk4": 0
             },
             {
-              "name": "Minimum SE Playback Interval",
+              "name": "Minimum Sound Playback Interval",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -514,7 +514,7 @@
               "unk4": 0
             },
             {
-              "name": "Maximum SE Playback Interval",
+              "name": "Maximum Sound Playback Interval",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -544,7 +544,7 @@
           ]
         },
         {
-          "name": "Modify Enemy Aggro To Player",
+          "name": "Modify Enemy Aggro",
           "index": 8,
           "args": [
             {
@@ -3521,7 +3521,7 @@
           ]
         },
         {
-          "name": "Spell Parry Setting",
+          "name": "Spell Parry",
           "index": 3,
           "args": [
             {
@@ -3679,7 +3679,7 @@
           ]
         },
         {
-          "name": "Add Spell Deflect Chance",
+          "name": "Random Spell Parry",
           "index": 6,
           "args": [
             {
@@ -3821,7 +3821,7 @@
           ]
         },
         {
-          "name": "SpEffect On Dies",
+          "name": "One Time Revival",
           "index": 1,
           "args": [
             {
@@ -4015,7 +4015,7 @@
           "args": []
         },
         {
-          "name": "Show Rankings",
+          "name": "Show Ranking",
           "index": 5,
           "args": []
         },
@@ -4653,7 +4653,7 @@
         "3": "Disable Death Penalty And Petrification",
         "4": "Critical Judgment Valid",
         "6": "Forced Living Display",
-        "10": "Disable Footstep SE",
+        "10": "Disable Footstep Sound",
         "15": "Enemy Hostility",
         "17": "Hide Left Weapon",
         "18": "Hide Right Weapon",
@@ -4683,7 +4683,7 @@
         "45": "Petrification Immunity",
         "46": "Enable Bullet Passthrough",
         "49": "Enable Bullet Friend Hit",
-        "50": "Disable Armor SE",
+        "50": "Disable Armor Sound",
         "51": "Disable Stun Damage",
         "52": "Disable Poise Damage",
         "53": "Disable Environment Damage",

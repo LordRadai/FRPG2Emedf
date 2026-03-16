@@ -9,3 +9,5 @@ ChrStatusValue
   Unknown22:
     - Event 41030000 (in SpEffectRing.emevd.js)
 ```
+
+Verify if unreferenced enum values are used or not.

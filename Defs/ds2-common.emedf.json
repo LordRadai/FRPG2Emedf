@@ -244,7 +244,7 @@
               "unk4": 0
             },
             {
-              "name": "Gravity Acceleration Multiplier Minimum",
+              "name": "Gravity Acceleration Rate Minimum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -258,7 +258,7 @@
               "unk4": 0
             },
             {
-              "name": "Gravity Acceleration Multiplier Maximum",
+              "name": "Gravity Acceleration Rate Maximum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -306,7 +306,7 @@
               "unk4": 0
             },
             {
-              "name": "Strong Bare Hand Weapon ID",
+              "name": "Weapon ID",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -320,7 +320,7 @@
               "unk4": 0
             },
             {
-              "name": "Strong Bare Hands Ladder Attack L Input Weapon ID",
+              "name": "Ladder Attack L Weapon ID",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -334,7 +334,7 @@
               "unk4": 0
             },
             {
-              "name": "Strong Bare Hands Ladder Attack R Input Weapon ID",
+              "name": "Ladder Attack R Weapon ID",
               "type": 2,
               "enum_name": null,
               "default": 0,
@@ -382,7 +382,7 @@
               "unk4": 0
             },
             {
-              "name": "Bullet Life Multiplier",
+              "name": "Bullet Life Rate",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -396,7 +396,7 @@
               "unk4": 0
             },
             {
-              "name": "Bullet Initial Speed Multiplier",
+              "name": "Bullet Initial Speed Rate",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -424,7 +424,7 @@
               "unk4": 0
             },
             {
-              "name": "Damage Distance Attenuation Start Multiplier",
+              "name": "Damage Distance Attenuation Start Rate",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -438,7 +438,7 @@
               "unk4": 0
             },
             {
-              "name": "Damage Distance Decay End Multiplier",
+              "name": "Damage Distance Decay End Rate",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -548,7 +548,7 @@
           "index": 8,
           "args": [
             {
-              "name": "Priority Multiplier",
+              "name": "Priority Rate",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -564,7 +564,7 @@
           ]
         },
         {
-          "name": "Modify Status Value32",
+          "name": "Modify Status Value Integer",
           "index": 9,
           "args": [
             {
@@ -905,7 +905,7 @@
               "unk4": 0
             },
             {
-              "name": "Multiplier At Minmum",
+              "name": "Rate At Minmum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -919,7 +919,7 @@
               "unk4": 0
             },
             {
-              "name": "Multiplier At Maximum",
+              "name": "Rate At Maximum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1287,7 +1287,7 @@
             {
               "name": "Attribute",
               "type": 0,
-              "enum_name": "AttributeType",
+              "enum_name": "LevelStatus",
               "default": 0,
               "min": 0,
               "max": 255,
@@ -1491,7 +1491,7 @@
             {
               "name": "Attribute",
               "type": 0,
-              "enum_name": "AttributeType",
+              "enum_name": "LevelStatus",
               "default": 0,
               "min": 0,
               "max": 0,
@@ -1531,7 +1531,7 @@
               "unk4": 0
             },
             {
-              "name": "Multiplier At Minimum",
+              "name": "Rate At Minimum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1545,7 +1545,7 @@
               "unk4": 0
             },
             {
-              "name": "Multiplier At Maximum",
+              "name": "Rate At Maximum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1852,7 +1852,7 @@
           "index": 7,
           "args": [
             {
-              "name": "Duration Multiplier",
+              "name": "Duration Rate",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -2165,7 +2165,7 @@
               "unk4": 0
             },
             {
-              "name": "AttributeType",
+              "name": "LevelStatus",
               "type": 0,
               "enum_name": "EquipmentAttribute",
               "default": 0,
@@ -2213,7 +2213,7 @@
               "unk4": 0
             },
             {
-              "name": "AttributeType",
+              "name": "LevelStatus",
               "type": 0,
               "enum_name": "EquipmentAttribute",
               "default": 0,
@@ -3300,7 +3300,7 @@
             {
               "name": "Attribute",
               "type": 0,
-              "enum_name": "AttributeType",
+              "enum_name": "LevelStatus",
               "default": 0,
               "min": 0,
               "max": 255,
@@ -4518,7 +4518,7 @@
               "unk4": 0
             },
             {
-              "name": "Multiplier",
+              "name": "Rate",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -4545,8 +4545,8 @@
         "1": "Weight",
         "2": "Attack Poise Damage",
         "3": "Fall Damage Protection Modifier",
-        "4": "Attack Correction Near-death HP Ratio (0-100%)",
-        "5": "Damage Taken Near-death HP Ratio (0-100%)",
+        "4": "Attack Power Near Death HP Rate",
+        "5": "Damage Taken Near Death HP Rate",
         "6": "Level Status [Vigor]",
         "7": "Level Status [Endurance]",
         "8": "Level Status [Vitality]",
@@ -4571,8 +4571,8 @@
         "10": "HP Decrease Value Spell [Sorcery]",
         "11": "HP Decrease Value Spell [Dark Magic]",
         "12": "HP Decrease Value Spell [Dark Miracle]",
-        "13": "Equipment Durability Value Change [Left Hand Current Weapon]",
-        "14": "Equipment Durability Value Change [Right Hand Current Weapon]",
+        "13": "Equipment Durability Value Change [Left Hand Weapon]",
+        "14": "Equipment Durability Value Change [Right Hand Weapon]",
         "15": "Equipment Durability Value Change [All Equipped Weapons]",
         "16": "Equipment Durability Value Change [All Equipment Armor]",
         "17": "Equipment Durability Value Change [All Equipment Rings]",
@@ -4583,8 +4583,8 @@
         "22": "HP Recovery On Kill SFX ID",
         "23": "HP Recovery On Kill SFX Dummy Poly ID",
         "25": "Npc Equip Weight",
-        "28": "Npc Equipment Durability Value Change [Left Hand Current Weapon]",
-        "29": "Npc Equipment Durability Value Change [Right Hand Current Weapon]",
+        "28": "Npc Equipment Durability Value Change [Left Hand Weapon]",
+        "29": "Npc Equipment Durability Value Change [Right Hand Weapon]",
         "30": "Npc Equipment Durability Value Change [All Equipped Weapons]",
         "31": "Npc Equipment Durability Value Change [All Equipment Armor]",
         "32": "Npc Equipment Durability Value Change [All Equipment Rings]",
@@ -4594,18 +4594,18 @@
     {
       "name": "ChrStatusRate",
       "values": {
-        "0": "Status Abnormality Recovery Speed Correction Value [Poison]",
-        "1": "Status Abnormality Recovery Speed Correction Value [Bleeding]",
-        "2": "Status Abnormality Recovery Speed Correction Value [Weapon Destruction]",
-        "3": "Status Abnormality Recovery Speed Correction Value [Curse]",
-        "4": "Status Abnormality Recovery Speed Correction Value [Combustion]",
-        "5": "Status Abnormality Recovery Speed Correction Value [Toxicity]",
-        "6": "Status Abnormality Recovery Speed Correction Value [Petrification]",
-        "7": "Maximum HP Correction Value",
-        "8": "Maximum Stamina Correction Value",
-        "9": "Maximum Equipment Weight Correction Value",
-        "10": "Recovery Upper Limit HP Correction Value When In Spirit Form",
-        "11": "Counter Damage Correction Value",
+        "0": "Status Abnormality Recovery Speed Rate [Poison]",
+        "1": "Status Abnormality Recovery Speed Rate [Bleeding]",
+        "2": "Status Abnormality Recovery Speed Rate [Weapon Destruction]",
+        "3": "Status Abnormality Recovery Speed Rate [Curse]",
+        "4": "Status Abnormality Recovery Speed Rate [Combustion]",
+        "5": "Status Abnormality Recovery Speed Rate [Toxicity]",
+        "6": "Status Abnormality Recovery Speed Rate [Petrification]",
+        "7": "Maximum HP Rate",
+        "8": "Maximum Stamina Rate",
+        "9": "Maximum Equipment Weight Rate",
+        "10": "Recovery Upper Limit HP Rate When In Spirit Form",
+        "11": "Counter Damage Rate",
         "12": "Physical Damage Cut Rate",
         "13": "Magic Damage Cut Rate",
         "14": "Lightning Damage Cut Rate",
@@ -4617,29 +4617,29 @@
         "20": "Cursed Damage Cut Rate",
         "21": "Petrification Damage Cut Rate",
         "22": "Weapon Durability Reduction Correction",
-        "23": "Armor Durability Reduction Correction",
-        "24": "Ring Durability Reduction Correction",
-        "25": "Damage Correction When Attacking",
-        "26": "Damage Correction When Receiving Damage",
-        "27": "Attack Damage Correction When Near Death",
-        "28": "Damage Compensation When Near Death",
-        "29": "Dead Person Demerit Invalidation Correction",
-        "30": "Obtained Soul Amount Correction",
-        "46": "Drop Item Magnification Correction [Small]",
-        "47": "Drop Item Magnification Correction [Medium]",
-        "48": "Drop Item Magnification Correction [Large]",
-        "49": "Drop Item Magnification Correction [Extra Large]",
+        "23": "Armor Durability Reduction Rate",
+        "24": "Ring Durability Reduction Rate",
+        "25": "Damage Rate When Attacking",
+        "26": "Damage Rate When Receiving Damage",
+        "27": "Attack Damage Rate When Near Death",
+        "28": "Damage Compensation Rate When Near Death",
+        "29": "Dead Person Demerit Invalidation Rate",
+        "30": "Obtained Soul Amount Rate",
+        "46": "Drop Item Magnification Rate [Small]",
+        "47": "Drop Item Magnification Rate [Medium]",
+        "48": "Drop Item Magnification Rate [Large]",
+        "49": "Drop Item Magnification Rate [Extra Large]",
         "50": "Maximum Number Of Spell Uses Changed",
         "51": "Change Spell Casting Time",
-        "52": "Spell Damage Multiplier [Magic]",
-        "53": "Spell Damage Multiplier [Miracle]",
-        "54": "Spell Damage Multiplier [Sorcery]",
-        "55": "Spell Damage Multiplier [Dark Magic]",
-        "56": "Spell Damage Multiplier [Dark Miracle]",
+        "52": "Spell Damage Rate [Magic]",
+        "53": "Spell Damage Rate [Miracle]",
+        "54": "Spell Damage Rate [Sorcery]",
+        "55": "Spell Damage Rate [Dark Magic]",
+        "56": "Spell Damage Rate [Dark Miracle]",
         "57": "Shield Stability Rate",
-        "58": "Enemy Damage Multiplier",
+        "58": "Enemy Damage Rate",
         "59": "Enemy Damage Cut Rate",
-        "60": "Equip Weight Multiplier",
+        "60": "Equip Weight Rate",
         "61": "Back Damage Physical Cut Rate",
         "62": "Back Damage Elemental Cut Rate"
       }
@@ -4708,12 +4708,12 @@
     {
       "name": "DeadCountAtkRateType",
       "values": {
-        "1": "Hollow Level",
+        "1": "Hollow",
         "2": "Sin"
       }
     },
     {
-      "name": "AttributeType",
+      "name": "LevelStatus",
       "values": {
         "1": "Vigor",
         "2": "Endurance",
@@ -4724,8 +4724,8 @@
         "7": "Intelligence",
         "8": "Faith",
         "9": "Adaptability",
-        "10": "Agility",
-        "11": "Luck"
+        "10": "Agility (Unused)",
+        "11": "Luck (Unused)"
       }
     },
     {
@@ -4827,14 +4827,14 @@
       "name": "StartAndEndConditions",
       "values": {
         "0": "None",
-        "1": "Remaining HP Percentage (0% To 100%)"
+        "1": "Remaining HP Percentage"
       }
     },
     {
       "name": "EffectTimeReductionConditions",
       "values": {
         "0": "None",
-        "1": "Is Underwater"
+        "1": "Underwater"
       }
     },
     {
@@ -4870,7 +4870,7 @@
       "name": "EquipmentDestructionActivationConditions",
       "values": {
         "0": "Death",
-        "1": "Petrification Disabled Activation"
+        "1": "Petrification"
       }
     },
     {
@@ -4885,9 +4885,9 @@
         "6": "Dark",
         "7": "Poison",
         "8": "Bleeding",
-        "9": "Weapon Destruction (Not Supported)",
-        "10": "Curse (Not Supported)",
-        "11": "Mundane (Not Supported)"
+        "9": "Weapon Destruction (Unused)",
+        "10": "Curse (Unused)",
+        "11": "Mundane (Unused)"
       }
     },
     {

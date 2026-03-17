@@ -24,10 +24,15 @@ namespace Emedf
 
 	std::string Argument::getEnumName()
 	{
-		if (m_json.contains("enum_name"))
+		if (m_json.contains("enum_name") && !m_json["enum_name"].is_null())
 			return m_json["enum_name"].get<std::string>();
 		else
 			return "";
+	}
+
+	bool Argument::isVarargs() const
+	{
+		return m_json.contains("vararg") && m_json["vararg"].get<bool>();
 	}
 
 	size_t Argument::getMemoryRequirements()

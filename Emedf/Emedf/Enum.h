@@ -21,5 +21,9 @@ namespace Emedf
 
 		std::vector<EnumValue*>& getValues() { return m_values; }
 		void addValue(int value, std::string str);
+		EnumValue* findValue(int value);
+		EnumValue* findValue(const std::string& name);
+		int getValueByName(const std::string& name);
+		std::string getNameByValue(int value);
 	};
 }

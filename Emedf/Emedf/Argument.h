@@ -62,6 +62,8 @@ namespace Emedf
 		std::string getFormatString() const { return m_json.at("format_string").get<std::string>(); }
 		void setFormatString(const std::string& formatString);
 
+		size_t getMemoryRequirements();
+
 		static const char* getTypeName(int type);
 		static int getTypeFromName(const std::string& str);
 	};

@@ -20,4 +20,48 @@ namespace Emedf
 
         m_values.push_back(new EnumValue(str, value));
 	}
+
+	EnumValue* Enum::findValue(int value)
+	{
+		for (EnumValue* enumValue : m_values)
+		{
+			if (enumValue->getValue() == value)
+				return enumValue;
+		}
+
+		return nullptr;
+	}
+
+	EnumValue* Enum::findValue(const std::string& name)
+	{
+		for (EnumValue* enumValue : m_values)
+		{
+			if (enumValue->getName() == name)
+				return enumValue;
+		}
+
+		return nullptr;
+	}
+
+	int Enum::getValueByName(const std::string& name)
+	{
+		for (EnumValue* enumValue : m_values)
+		{
+			if (enumValue->getName() == name)
+				return enumValue->getValue();
+		}
+
+		throw std::runtime_error("Enum value not found for name: " + name);
+	}
+
+	std::string Enum::getNameByValue(int value)
+	{
+		for (EnumValue* enumValue : m_values)
+		{
+			if (enumValue->getValue() == value)
+				return enumValue->getName();
+		}
+
+		throw std::runtime_error("Enum name not found for value: " + std::to_string(value));
+	}
 }

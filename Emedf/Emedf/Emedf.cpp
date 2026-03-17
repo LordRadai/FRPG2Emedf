@@ -73,15 +73,48 @@ namespace Emedf
 		m_mainClasses.push_back(mainClass);
 	}
 
+	Class* Emedf::findMainClass(const std::string& name)
+	{
+		for (Class* mainClass : m_mainClasses)
+		{
+			if (mainClass->getName() == name)
+				return mainClass;
+		}
+
+		return nullptr;
+	}
+
 	void Emedf::addExtraClass(Class* extraClass)
 	{
 		m_json["extra_classes"].push_back(extraClass->getJson());
 		m_extraClasses.push_back(extraClass);
 	}
 
+	Class* Emedf::findExtraClass(const std::string& name)
+	{
+		for (Class* extraClass : m_extraClasses)
+		{
+			if (extraClass->getName() == name)
+				return extraClass;
+		}
+
+		return nullptr;
+	}
+
 	void Emedf::addEnum(Enum* e)
 	{
 		m_json["enums"].push_back(e->getJson());
 		m_enums.push_back(e);
+	}
+
+	Enum* Emedf::findEnum(const std::string& name)
+	{
+		for (Enum* e : m_enums)
+		{
+			if (e->getName() == name)
+				return e;
+		}
+
+		return nullptr;
 	}
 }

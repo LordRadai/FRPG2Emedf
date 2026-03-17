@@ -23,6 +23,7 @@ namespace Emedf
 		void setName(const std::string& name) { m_json["name"] = name; }
 
 		Instruction* findInstruction(int index);
+		Instruction* findInstruction(const std::string& name);
 		std::vector<Instruction*>& getInstructions() { return m_instructions; }
 		void addInstruction(Instruction* instruction);
 	};

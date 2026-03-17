@@ -27,4 +27,15 @@ namespace Emedf
 
 		return nullptr;
 	}
+
+	Instruction* Class::findInstruction(const std::string& name)
+	{
+		for (Instruction* instr : m_instructions)
+		{
+			if (instr->getName() == name)
+				return instr;
+		}
+
+		return nullptr;
+	}
 }

@@ -30,6 +30,25 @@ namespace Emedf
 			return "";
 	}
 
+	size_t Argument::getMemoryRequirements()
+	{
+		switch (getType())
+		{
+		case kTypeU8:
+		case kTypeS8:
+			return 1;
+		case kTypeU16:
+		case kTypeS16:
+			return 2;
+		case kTypeU32:
+		case kTypeS32:
+		case kTypeFloat32:
+			return 4;
+		default:
+			throw std::runtime_error("Unknown argument type: " + std::to_string(getType()));
+		}
+	}
+
 	void Argument::setEnumName(const std::string& enumName)
 	{
 		if (enumName.empty())

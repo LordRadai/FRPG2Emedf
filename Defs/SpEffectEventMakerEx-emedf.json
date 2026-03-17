@@ -4115,12 +4115,12 @@
           ]
         },
         {
-          "name": "Infinite Effect Time",
+          "name": "Infinite Effect Duration",
           "index": 2,
           "args": []
         },
         {
-          "name": "Special Effect ID Specification (Unused)",
+          "name": "Set Effect ID (Unused)",
           "index": 3,
           "args": [
             {
@@ -4140,7 +4140,7 @@
           ]
         },
         {
-          "name": "Set Effects Duration",
+          "name": "Set Effect Duration",
           "index": 4,
           "args": [
             {

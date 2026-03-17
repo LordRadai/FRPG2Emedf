@@ -23,5 +23,8 @@ namespace Emedf
 
 		std::vector<Argument*>& getArguments() { return m_arguments; }
 		void addArgument(Argument* argument);
+
+		size_t getArgAlignment();
+		size_t getMemoryRequirements();
 	};
 }

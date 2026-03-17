@@ -345,7 +345,7 @@ Event(60375001, Default, function() {
 
 Event(60405000, Default, function() {
     FullBodySFX(500010, SFXDeletionTiming.EffectTimeExpired);
-    VirtualCommand(1);
+    SetEffectsDuration(1);
     CreateBullet(60405000, 60405000, BulletAttackPowerType.None, 1);
 });
 
@@ -367,12 +367,12 @@ Event(60405020, Default, function() {
 
 Event(60405030, Default, function() {
     FullBodySFX(500020, SFXDeletionTiming.EffectTimeExpired);
-    VirtualCommand(1);
+    SetEffectsDuration(1);
 });
 
 Event(60406000, Default, function() {
     FullBodySFX(500110, SFXDeletionTiming.EffectTimeExpired);
-    VirtualCommand(1);
+    SetEffectsDuration(1);
     CreateBullet(60406000, 60406000, BulletAttackPowerType.None, 1);
 });
 
@@ -392,7 +392,7 @@ Event(60406020, Default, function() {
 
 Event(60406030, Default, function() {
     FullBodySFX(500120, SFXDeletionTiming.EffectTimeExpired);
-    VirtualCommand(1);
+    SetEffectsDuration(1);
 });
 
 Event(60410000, Default, function() {
@@ -588,7 +588,7 @@ Event(62160000, Default, function() {
 
 Event(62170000, Default, function() {
     EffectSFX(1124, 249, SFXDeletionTiming.EffectTimeExpired, 7, StartAndEndConditions.None, 0);
-    VirtualCommand(3600);
+    SetEffectsDuration(3600);
 });
 
 Event(62170010, Default, function() {

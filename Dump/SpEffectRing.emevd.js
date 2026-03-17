@@ -342,17 +342,17 @@ Event(40350002, Default, function() {
 
 Event(40360000, Default, function() {
     DisplayIcon(90, StartAndEndConditions.None, 0);
-    VirtualCommand(0);
+    SetEffectsDuration(0);
 });
 
 Event(40360001, Default, function() {
     DisplayIcon(90, StartAndEndConditions.None, 0);
-    VirtualCommand(0);
+    SetEffectsDuration(0);
 });
 
 Event(40360002, Default, function() {
     DisplayIcon(90, StartAndEndConditions.None, 0);
-    VirtualCommand(0);
+    SetEffectsDuration(0);
 });
 
 Event(40370000, Default, function() {

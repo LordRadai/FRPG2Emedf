@@ -63,7 +63,7 @@ Event(2680000, Default, function() {
 Event(3400010, Default, function() {
     CreateBullet(10070, 10070, BulletAttackPowerType.Strength, 0.7);
     CreateBullet(10071, 10071, BulletAttackPowerType.None, 1);
-    VirtualCommand(0.5);
+    SetEffectsDuration(0.5);
 });
 
 Event(3440000, Default, function() {
@@ -232,7 +232,7 @@ Event(1630021, Default, function() {
 
 Event(1790015, Default, function() {
     WeaponSFX(5444, 10, 0, 1, 0, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(1790020, Default, function() {
@@ -270,12 +270,12 @@ Event(2855000, Default, function() {
 Event(3530000, Default, function() {
     EffectSFX(5432, 20, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
     EffectSFX(5432, 21, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(0.95);
+    SetEffectsDuration(0.95);
 });
 
 Event(3530010, Default, function() {
     CreateBullet(20088700, 20088700, BulletAttackPowerType.Strength, 1.8);
-    VirtualCommand(0.5);
+    SetEffectsDuration(0.5);
     ModifyStatusValue32(ChrStatusValue32.EquipmentDurabilityValueChangeLeftHandCurrentWeapon, 0, -5);
     ModifyStatusValue32(ChrStatusValue32.EquipmentDurabilityValueChangeRightHandCurrentWeapon, 0, -5);
 });
@@ -299,7 +299,7 @@ Event(5050000, Default, function() {
 
 Event(5255000, Default, function() {
     WeaponSFX(5481, 10, 0, 1, 0, 0);
-    VirtualCommand(1.7);
+    SetEffectsDuration(1.7);
 });
 
 Event(11320000, Default, function() {

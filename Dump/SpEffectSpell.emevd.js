@@ -239,7 +239,7 @@ Event(31240000, Default, function() {
 
 Event(31250001, Default, function() {
     WeaponSFX(5184, 0.1, 0, 1, 0, 0);
-    VirtualCommand(1);
+    SetEffectsDuration(1);
 });
 
 Event(31250002, Default, function() {
@@ -250,7 +250,7 @@ Event(31250002, Default, function() {
 
 Event(31251001, Default, function() {
     WeaponSFX(5184, 0.1, 0, 1, 0, 0);
-    VirtualCommand(1);
+    SetEffectsDuration(1);
 });
 
 Event(31251002, Default, function() {
@@ -335,35 +335,35 @@ Event(32010010, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 12, 22, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 300, floatArg(1), 1);
     EffectSFX(5200, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32010011, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 12, 22, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 450, floatArg(1), 1);
     EffectSFX(5200, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32010012, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 12, 22, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 500, floatArg(1), 1);
     EffectSFX(5200, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32010013, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 12, 22, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 550, floatArg(1), 1);
     EffectSFX(5200, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32010014, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 12, 22, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 600, floatArg(1), 1);
     EffectSFX(5200, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32020000, Default, function() {
@@ -374,42 +374,42 @@ Event(32020010, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 18, 28, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 400, floatArg(1.25), 1);
     EffectSFX(5201, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32020011, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 18, 28, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 600, floatArg(1.25), 1);
     EffectSFX(5201, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32020012, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 18, 28, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 800, floatArg(1.25), 1);
     EffectSFX(5201, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32020013, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 18, 28, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 825, floatArg(1.25), 1);
     EffectSFX(5201, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32020014, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 18, 28, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 850, floatArg(1.25), 1);
     EffectSFX(5201, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32030000, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 10, 14, 0.5, 1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 1300, floatArg(1.5), 1);
     EffectSFX(5202, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32040000, Default, function() {
@@ -420,35 +420,35 @@ Event(32040010, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 28, 38, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 600, floatArg(1.75), 1);
     EffectSFX(5203, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32040011, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 28, 38, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 1000, floatArg(1.75), 1);
     EffectSFX(5203, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32040012, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 28, 38, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 1100, floatArg(1.75), 1);
     EffectSFX(5203, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32040013, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 28, 38, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 1200, floatArg(1.75), 1);
     EffectSFX(5203, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32040014, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 28, 38, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 1300, floatArg(1.75), 1);
     EffectSFX(5203, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32050000, Default, function() {
@@ -459,35 +459,35 @@ Event(32050010, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 52, 62, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 500, floatArg(1.75), 1);
     EffectSFX(5204, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32050011, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 52, 62, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 600, floatArg(1.75), 1);
     EffectSFX(5204, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32050012, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 52, 62, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 700, floatArg(1.75), 1);
     EffectSFX(5204, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32050013, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 52, 62, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 1000, floatArg(1.75), 1);
     EffectSFX(5204, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32050014, Default, function() {
     EffectCorrectionByAttribute(EffectCorrectionTarget.Value, AttributeType.Faith, 52, 62, 1, 1.1, 1, 1, 1, 1);
     TimeHPRecovery(1, 850, 1100, floatArg(1.75), 1);
     EffectSFX(5204, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32060000, Default, function() {
@@ -554,7 +554,7 @@ Event(32080014, Default, function() {
 });
 
 Event(32080050, Default, function() {
-    VirtualCommand(0.5);
+    SetEffectsDuration(0.5);
 });
 
 Event(32090000, Default, function() {
@@ -564,12 +564,12 @@ Event(32090000, Default, function() {
     ModifyStatusRate(ChrStatusRate.StatusAbnormalityRecoverySpeedCorrectionValuePoison, 1, 100);
     ModifyStatusRate(ChrStatusRate.StatusAbnormalityRecoverySpeedCorrectionValueToxicity, 1, 100);
     EffectSFX(5208, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(32170011, Default, function() {
     EffectSFX(5216, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(2);
+    SetEffectsDuration(2);
 });
 
 Event(32190000, Default, function() {
@@ -678,7 +678,7 @@ Event(32220000, Default, function() {
     AllowEffectTimeExtension();
     EffectSFX(5221, 249, SFXDeletionTiming.EffectTimeExpired, 20, StartAndEndConditions.None, 0);
     EffectCorrectionByAttribute(EffectCorrectionTarget.Duration, AttributeType.Faith, 10, 18, 0.7, 2, 1, 1, 1, 1);
-    VirtualCommand(60);
+    SetEffectsDuration(60);
 });
 
 Event(32230000, Default, function() {
@@ -727,7 +727,7 @@ Event(32230014, Default, function() {
 });
 
 Event(32230050, Default, function() {
-    VirtualCommand(0.5);
+    SetEffectsDuration(0.5);
 });
 
 Event(32240000, Default, function() {
@@ -777,17 +777,17 @@ Event(32261000, Default, function() {
 
 Event(33050003, Default, function() {
     CreateBullet(33050004, 33050004, BulletAttackPowerType.None, 1);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(33060003, Default, function() {
     CreateBullet(33060004, 33060004, BulletAttackPowerType.None, 1);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(33070003, Default, function() {
     CreateBullet(33070004, 33070004, BulletAttackPowerType.None, 1);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(33170000, Default, function() {
@@ -847,7 +847,7 @@ Event(33190010, Default, function() {
 Event(33200000, Default, function() {
     EffectSFX(5259, 249, SFXDeletionTiming.Invalid, 0, StartAndEndConditions.None, 0);
     TimeHPRecovery(1, 850, 150, floatArg(1), 1);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(33210000, Default, function() {
@@ -860,7 +860,7 @@ Event(33210005, Default, function() {
     GenerateDamage(33210010, 1, -1);
     EffectSFX(5260, 249, SFXDeletionTiming.EffectTimeExpired, 9, StartAndEndConditions.None, 0);
     ModifyStatusFlag(ChrStatusFlag.FlameWeapon, 30);
-    VirtualCommand(30);
+    SetEffectsDuration(30);
 });
 
 Event(33210010, Default, function() {
@@ -1199,7 +1199,7 @@ Event(35090014, Default, function() {
 
 Event(33320003, Default, function() {
     CreateBullet(33320004, 33320004, BulletAttackPowerType.None, 1);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(34300022, Default, function() {

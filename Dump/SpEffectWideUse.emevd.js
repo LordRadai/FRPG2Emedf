@@ -117,22 +117,22 @@ Event(110000010, Default, function() {
 
 Event(120000010, Default, function() {
     EffectSFX(3739, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(0.5);
+    SetEffectsDuration(0.5);
 });
 
 Event(120000020, Default, function() {
     EffectSFX(3739, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(0.5);
+    SetEffectsDuration(0.5);
 });
 
 Event(120000030, Default, function() {
     EffectSFX(3739, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(0.5);
+    SetEffectsDuration(0.5);
 });
 
 Event(120000110, Default, function() {
     EffectSFX(3739, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(0.5);
+    SetEffectsDuration(0.5);
 });
 
 Event(120000210, Default, function() {
@@ -141,7 +141,7 @@ Event(120000210, Default, function() {
 
 Event(120000310, Default, function() {
     EffectSFX(659, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(1.5);
+    SetEffectsDuration(1.5);
 });
 
 Event(130000010, Default, function() {
@@ -159,16 +159,16 @@ Event(140001000, Default, function() {
 
 Event(140001010, Default, function() {
     EffectSFX(659, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(1.5);
+    SetEffectsDuration(1.5);
 });
 
 Event(150000000, Default, function() {
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(150101000, Default, function() {
     EffectSFX(3739, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(0.5);
+    SetEffectsDuration(0.5);
 });
 
 Event(150200000, Default, function() {
@@ -274,7 +274,7 @@ Event(170001000, Default, function() {
 });
 
 Event(170100000, Default, function() {
-    VirtualCommand(4.8);
+    SetEffectsDuration(4.8);
 });
 
 

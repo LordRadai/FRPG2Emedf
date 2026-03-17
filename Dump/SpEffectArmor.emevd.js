@@ -9,12 +9,12 @@
 
 Event(21140100, Default, function() {
     DisplayIcon(90, StartAndEndConditions.None, 0);
-    VirtualCommand(0);
+    SetEffectsDuration(0);
 });
 
 Event(21210100, Default, function() {
     DisplayIcon(90, StartAndEndConditions.None, 0);
-    VirtualCommand(0);
+    SetEffectsDuration(0);
 });
 
 Event(21210101, Default, function() {
@@ -94,7 +94,7 @@ Event(21470110, Default, function() {
 
 Event(21470120, Default, function() {
     EffectSFX(5425, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(3);
+    SetEffectsDuration(3);
 });
 
 Event(21501100, Default, function() {
@@ -200,22 +200,22 @@ Event(22512101, Default, function() {
 
 Event(22270100, Default, function() {
     DisplayIcon(90, StartAndEndConditions.None, 0);
-    VirtualCommand(0);
+    SetEffectsDuration(0);
 });
 
 Event(22270101, Default, function() {
     DisplayIcon(90, StartAndEndConditions.None, 0);
-    VirtualCommand(0);
+    SetEffectsDuration(0);
 });
 
 Event(22271100, Default, function() {
     DisplayIcon(90, StartAndEndConditions.None, 0);
-    VirtualCommand(0);
+    SetEffectsDuration(0);
 });
 
 Event(22271101, Default, function() {
     DisplayIcon(90, StartAndEndConditions.None, 0);
-    VirtualCommand(0);
+    SetEffectsDuration(0);
 });
 
 Event(23080101, Default, function() {
@@ -356,7 +356,7 @@ Event(21630105, Default, function() {
 Event(21630110, Default, function() {
     RestoreSpellUsage(20, Fraction.RoundUp);
     EffectSFX(5466, 249, SFXDeletionTiming.EffectTimeExpired, 0, StartAndEndConditions.None, 0);
-    VirtualCommand(2);
+    SetEffectsDuration(2);
 });
 
 Event(21640100, Default, function() {
@@ -406,7 +406,7 @@ Event(21660100, Default, function() {
 
 Event(21670100, Default, function() {
     DisplayIcon(30, StartAndEndConditions.None, 0);
-    VirtualCommand(0);
+    SetEffectsDuration(0);
 });
 
 Event(21680100, Default, function() {

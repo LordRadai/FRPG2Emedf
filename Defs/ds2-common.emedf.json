@@ -3801,11 +3801,11 @@
       "index": 100140,
       "instrs": [
         {
-          "name": "Set Death Permission",
+          "name": "Set Immortality",
           "index": 0,
           "args": [
             {
-              "name": "Setting",
+              "name": "Prohibit",
               "type": 0,
               "enum_name": "BOOL",
               "default": 0,

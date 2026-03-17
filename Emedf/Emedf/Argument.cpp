@@ -32,7 +32,7 @@ namespace Emedf
 
 	bool Argument::isVarargs() const
 	{
-		return m_json.contains("varargs") && m_json["varargs"].get<bool>();
+		return m_json.contains("vararg") && m_json["vararg"].get<bool>();
 	}
 
 	size_t Argument::getMemoryRequirements()

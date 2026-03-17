@@ -4568,7 +4568,7 @@
       "values": {
         "8": "HP Decrease Value Spell [Magic]",
         "9": "HP Decrease Value Spell [Miracle]",
-        "10": "HP Decrease Value Spell [Sorcery]",
+        "10": "HP Decrease Value Spell [Pyromancy]",
         "11": "HP Decrease Value Spell [Dark Magic]",
         "12": "HP Decrease Value Spell [Dark Miracle]",
         "13": "Equipment Durability Value Change [Left Hand Weapon]",
@@ -4633,7 +4633,7 @@
         "51": "Change Spell Casting Time",
         "52": "Spell Damage Rate [Magic]",
         "53": "Spell Damage Rate [Miracle]",
-        "54": "Spell Damage Rate [Sorcery]",
+        "54": "Spell Damage Rate [Pyromancy]",
         "55": "Spell Damage Rate [Dark Magic]",
         "56": "Spell Damage Rate [Dark Miracle]",
         "57": "Shield Stability Rate",

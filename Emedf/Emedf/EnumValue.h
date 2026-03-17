@@ -15,7 +15,7 @@ namespace Emedf
 		std::string getName() const { return m_name; }
 		void setName(const std::string& name) { m_name = name; }
 
-		int getValue() const { m_value; }
+		int getValue() const { return m_value; }
 		void setValue(int value) { m_value = value; }
 	};
 }

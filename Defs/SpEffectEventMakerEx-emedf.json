@@ -4140,7 +4140,7 @@
           ]
         },
         {
-          "name": "Virtual Command",
+          "name": "Set Effects Duration",
           "index": 4,
           "args": [
             {

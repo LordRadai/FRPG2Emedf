@@ -1133,7 +1133,7 @@
               "unk4": 0
             },
             {
-              "name": "Minimum Value",
+              "name": "Value At Minimum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1147,7 +1147,7 @@
               "unk4": 0
             },
             {
-              "name": "Maximum Value",
+              "name": "Value At Maximum",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
